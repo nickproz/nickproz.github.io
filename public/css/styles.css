@@ -1,0 +1,43 @@
+/* Navbar */
+#fullpage .section:nth-child(even) {
+  background-color: #404040; }
+
+#fullpage .section:nth-child(odd) {
+  background-color: #808080; }
+
+#fullpage .section {
+  color: white;
+  text-align: center; }
+
+/* NAVIGATION */
+.navbar {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee; }
+
+/* Navbar active colors */
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+  background-color: #47a3da !important; }
+  .navbar-nav > .active > a .navLinks,
+  .navbar-nav > .active > a:focus .navLinks,
+  .navbar-nav > .active > a:hover .navLinks {
+    color: #eeeeee !important; }
+
+.navbar-collapse.navbar-ex1-collapse.collapse.in {
+  border-top: 1px solid #eeeeee !important; }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
+.navLinks {
+  color: #47a3da; }
+
+/* Comment out to keep navbar small at top of screen */
+.navbar {
+  padding: 0 !important; }

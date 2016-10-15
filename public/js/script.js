@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#fullpage").fullpage({anchors:["top","about","work","expertise","connect","bottom"],menu:"#menu",fixedElements:"#modal0, #modal1"})});
