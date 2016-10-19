@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#fullpage").fullpage({anchors:["top","about","work","expertise","connect","bottom"],menu:"#menu",fixedElements:"#modal0, #modal1"})});
+$(document).ready(function(){$("#fullpage").fullpage({anchors:["top","about","work","expertise","connect","bottom"],menu:"#menu",fixedElements:"#modal0, #modal1"});var n=$(".nav li"),o=$(".navbar-toggle");n.on("click",function(){t()||o.click()});var e=767,t=function(){return $(window).width()>e}});

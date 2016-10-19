@@ -1,4 +1,6 @@
 /* Navbar */
+/* Fonts */
+/* GENERAL */
 #fullpage .section:nth-child(even) {
   background-color: #404040; }
 
@@ -7,37 +9,43 @@
 
 #fullpage .section {
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
+
+html, body {
+  font-family: "Rubik", sans-serif; }
 
 /* NAVIGATION */
 .navbar {
-  background-color: #eeeeee;
-  border: 1px solid #eeeeee; }
-
-/* Navbar active colors */
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:focus,
-.navbar-nav > .active > a:hover {
-  background-color: #47a3da !important; }
-  .navbar-nav > .active > a .navLinks,
-  .navbar-nav > .active > a:focus .navLinks,
-  .navbar-nav > .active > a:hover .navLinks {
-    color: #eeeeee !important; }
-
-.navbar-collapse.navbar-ex1-collapse.collapse.in {
-  border-top: 1px solid #eeeeee !important; }
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top; }
-
-.navbar .navbar-collapse {
-  text-align: center; }
-
-.navLinks {
-  color: #47a3da; }
-
-/* Comment out to keep navbar small at top of screen */
-.navbar {
-  padding: 0 !important; }
+  background-color: #efefef;
+  height: 50px;
+  border: 0;
+  /* Outer list element */
+  /* Inner list elements */
+  /* Inner list link */
+  /* Mobile menu */
+  /* Mobile menu header */
+  /* Desktop styling */ }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .nav-links-container {
+    /* Active link */
+    /* Non-active links */ }
+    .navbar .nav-links-container.active a.nav-links {
+      background-color: #47a3da !important;
+      color: #efefef !important; }
+    .navbar .nav-links-container:not(.active) a.nav-links:hover {
+      color: #1f6d9c !important;
+      background-color: #e2e2e2 !important; }
+  .navbar a.nav-links {
+    color: #47a3da !important; }
+  .navbar .navbar-collapse {
+    text-align: center;
+    background-color: white; }
+  .navbar .navbar-header {
+    border-bottom: 1px solid #efefef; }
+  @media only screen and (min-width: 768px) {
+    .navbar .navbar-collapse {
+      background-color: #efefef; } }

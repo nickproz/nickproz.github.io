@@ -1,3 +1,4 @@
+/* GENERAL */
 #fullpage {
     .section:nth-child(even) {
         background-color: #404040;
@@ -8,45 +9,59 @@
     .section {
         color: white;
         text-align: center;
+        padding-top: $navbar-height;
     }
+}
+
+html, body {
+    font-family: $font--site-font;
 }
 
 /* NAVIGATION */
 .navbar {
 	background-color: $color--navbar-background;
-	border: 1px solid $color--navbar-background;
-}
-
-/* Navbar active colors */
-.navbar-nav>.active>a,
-.navbar-nav>.active>a:focus,
-.navbar-nav>.active>a:hover {
-	background-color: $color--navbar-active-text !important;
-
-	.navLinks {
-		color: $color--navbar-background !important;
-	}
-}
-
-.navbar-collapse.navbar-ex1-collapse.collapse.in {
-	border-top: 1px solid $color--navbar-background !important;
-}
-
-.navbar .navbar-nav {
-	display: inline-block;
-	float: none;
-	vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-	text-align: center;
-}
-
-.navLinks {
-	color: $color--navbar-active-text;
-}
-
-/* Comment out to keep navbar small at top of screen */
-.navbar {
-	padding: 0 !important;
+    height: $navbar-height;
+    border: 0;
+    /* Outer list element */
+    .navbar-nav {
+    	display: inline-block;
+    	float: none;
+    	vertical-align: top;
+    }
+    /* Inner list elements */
+    .nav-links-container {
+        /* Active link */
+        &.active {
+            a.nav-links {
+                background-color: $color--navbar-active-text !important;
+                color: $color--navbar-background !important;
+            }
+        }
+        /* Non-active links */
+        &:not(.active) {
+            a.nav-links:hover {
+                color: darken($color--navbar-active-text, 20%) !important;
+                background-color: darken($color--navbar-background, 5%) !important;
+            }
+        }
+    }
+    /* Inner list link */
+    a.nav-links {
+    	color: $color--navbar-active-text !important;
+    }
+    /* Mobile menu */
+    .navbar-collapse {
+        text-align: center;
+        background-color: white;
+    }
+    /* Mobile menu header */
+    .navbar-header{
+        border-bottom: 1px solid $color--navbar-background;
+    }
+    /* Desktop styling */
+    @media #{($break-tablet-portrait)} {
+        .navbar-collapse {
+            background-color: $color--navbar-background;
+        }
+    }
 }

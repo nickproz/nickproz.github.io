@@ -37,3 +37,8 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['sass', 'js', 'serve', 'watch']);
+
+process.on('uncaughtException', function(error) {
+    console.log(error);
+    process.exit(1)
+})
