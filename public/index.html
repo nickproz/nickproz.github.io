@@ -13,46 +13,32 @@
   <link rel="stylesheet" href="./dependencies/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="./dependencies/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="./dependencies/fullpage/dist/jquery.fullpage.css" >
-
   <link rel="stylesheet" href="./css/styles.css">
 
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Ek+Mukta' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
   <!-- Scripts -->
   <script src="./dependencies/jquery/dist/jquery.min.js"></script>
+  <script src="./dependencies/jquery-ui/jquery-ui.min.js"></script>
   <script src="./dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./dependencies/slick-carousel/slick/slick.js"></script>
   <script src="./dependencies/fullpage/dist/jquery.fullpage.min.js"></script>
   <script src="./dependencies/fullpage/dist/jquery.fullpage.extensions.min.js"></script>
   <script src="./js/script.js"></script>
+
 </head>
-
 <body>
-
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav" id="menu">
-                    <li data-menuanchor="top" class="nav-links-container"><a href="#top" class="nav-links">Home</a></li>
-                    <li data-menuanchor="about" class="nav-links-container"><a href="#about" class="nav-links">About Me</a></li>
-                    <li data-menuanchor="work" class="nav-links-container"><a href="#work" class="nav-links">Experience</a></li>
-                    <li data-menuanchor="expertise" class="nav-links-container"><a href="#expertise" class="nav-links">Skills</a></li>
-                    <li data-menuanchor="connect" class="nav-links-container"><a href="#connect" class="nav-links">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div>
+    <ul class="navigation" id="menu">
+        <li data-menuanchor="top" class="nav-link-container"><a href="#top" class="nav-link">Home</a></li>
+        <li data-menuanchor="about" class="nav-link-container"><a href="#about" class="nav-link">About Me</a></li>
+        <li data-menuanchor="work" class="nav-link-container"><a href="#work" class="nav-link">Experience</a></li>
+        <li data-menuanchor="expertise" class="nav-link-container"><a href="#expertise" class="nav-link">Skills</a></li>
+        <li data-menuanchor="connect" class="nav-link-container"><a href="#connect" class="nav-link">Contact</a></li>
+    </ul>
+    </div>
 
     <div id="fullpage">
 		<!-- HOME -->

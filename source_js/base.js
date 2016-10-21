@@ -7,18 +7,11 @@ $(document).ready(function() {
 		fixedElements: '#modal0, #modal1'
 	});
 
-	/* Navigation */
-	var $navigationLink = $('.nav li');
-	var $navigationToggle = $('.navbar-toggle');
-	$navigationLink.on('click', function() {
-		if(!isDesktop()) {
-			$navigationToggle.click();
-		}
-	});
-
 	/* Responsive util */
 	var desktopBreakpoint = 767;
 	var isDesktop = function() {
 		return $(window).width() > desktopBreakpoint;
 	}
+	/* Fade body content in after page has loaded */
+	$('body').css('visibility','visible').hide().fadeIn('fast');
 });

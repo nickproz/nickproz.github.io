@@ -1,8 +1,18 @@
-/* Navbar */
-$color--navbar-background: 			#efefef;
-$color--navbar-active-text: 		#47a3da;
-$color--navbar-active-background: 	#555555;
-$navbar-height: 50px;
+// All variables are stored here. They should be created based on the following format:
+// <property>-<value>[--componentName]. Variables used for different sections are
+// separated by by comment sections.
+//
+// example (creation): $color-background--navbar: red;
+// example (usage): background-color: $color-background--navbar;
 
-/* Fonts */
-$font--site-font:       'Rubik', sans-serif;
+// Navbar
+// --------------------------------------------------
+$color-grayLight--navbar: 			#efefef;
+$color-grayDark--navbar: 			#404040;
+$color-bluePale--navbar: 		    #47a3da;
+$color-blueElectric--navbar: 		#0cf;
+$size-height--navbar:               50px;
+
+// Fonts
+// --------------------------------------------------
+$font-family--site:       'Rubik', sans-serif;

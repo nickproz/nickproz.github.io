@@ -1,0 +1,50 @@
+// ALl mixins are stored here.
+//
+// example (usage): @include vertical-center();
+
+// General mixins
+// --------------------------------------------------
+
+// Vertical centering
+@mixin vertical-center {
+     position:          relative;
+     top:               50%;
+     -webkit-transform: translateY(-50%);
+     -ms-transform:     translateY(-50%);
+     transform:         translateY(-50%);
+}
+
+// Transition
+@mixin transition($seconds) {
+    -moz-transition:    all $seconds;
+    -webkit-transition: all $seconds;
+    transition:         all $seconds;
+}
+
+// Theme mixins
+// --------------------------------------------------
+
+// Navigation
+@mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active, $hover-color) {
+    background-color: $background-color;
+
+    // List elements (li)
+    .nav-link-container {
+        // Active element
+        &.nav-active {
+            background-color: $background-color-active;
+
+            .nav-link {
+                color: $text-color-active;
+            }
+        }
+        // Non-active elements
+        &:hover:not(.nav-active) {
+            background-color: $hover-color;
+        }
+    }
+    // Link elements (a)
+    .nav-link {
+        color: $text-color;
+    }
+}

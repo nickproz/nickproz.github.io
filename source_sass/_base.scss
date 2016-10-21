@@ -1,5 +1,6 @@
-/* GENERAL */
+// General Styling
 #fullpage {
+
     .section:nth-child(even) {
         background-color: #404040;
     }
@@ -9,59 +10,14 @@
     .section {
         color: white;
         text-align: center;
-        padding-top: $navbar-height;
+        padding-top: $size-height--navbar;
     }
 }
 
 html, body {
-    font-family: $font--site-font;
+    font-family: $font-family--site;
 }
 
-/* NAVIGATION */
-.navbar {
-	background-color: $color--navbar-background;
-    height: $navbar-height;
-    border: 0;
-    /* Outer list element */
-    .navbar-nav {
-    	display: inline-block;
-    	float: none;
-    	vertical-align: top;
-    }
-    /* Inner list elements */
-    .nav-links-container {
-        /* Active link */
-        &.active {
-            a.nav-links {
-                background-color: $color--navbar-active-text !important;
-                color: $color--navbar-background !important;
-            }
-        }
-        /* Non-active links */
-        &:not(.active) {
-            a.nav-links:hover {
-                color: darken($color--navbar-active-text, 20%) !important;
-                background-color: darken($color--navbar-background, 5%) !important;
-            }
-        }
-    }
-    /* Inner list link */
-    a.nav-links {
-    	color: $color--navbar-active-text !important;
-    }
-    /* Mobile menu */
-    .navbar-collapse {
-        text-align: center;
-        background-color: white;
-    }
-    /* Mobile menu header */
-    .navbar-header{
-        border-bottom: 1px solid $color--navbar-background;
-    }
-    /* Desktop styling */
-    @media #{($break-tablet-portrait)} {
-        .navbar-collapse {
-            background-color: $color--navbar-background;
-        }
-    }
+body {
+    visibility: hidden;
 }

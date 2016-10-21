@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var server = require('gulp-webserver');
 var clean = require('gulp-clean');
+var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
     gulp.src('source_sass/*.scss')
@@ -17,7 +18,8 @@ gulp.task('clean-scripts', function () {
 
 gulp.task('js', ['clean-scripts'], function() {
   gulp.src('source_js/*.js')
-    .pipe(uglify())
+    .pipe(concat('script.js'))
+    //.pipe(uglify())
     .pipe(gulp.dest('public/js/'));
 });
 
@@ -38,6 +40,7 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['sass', 'js', 'serve', 'watch']);
 
+// Log errors to the console (mainly for JS debugging)
 process.on('uncaughtException', function(error) {
     console.log(error);
     process.exit(1)

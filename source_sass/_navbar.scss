@@ -1,0 +1,33 @@
+// Navigation Styling
+.navigation {
+    height: $size-height--navbar;
+    z-index: $zIndex-10--navigationMenu;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    // @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active)
+    // Light theme
+    @include theme-navigation(  $color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));
+    // Dark theme
+    // @include theme-navigation($color-grayDark--navbar, $color-blueElectric--navbar, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));
+
+    // List elements (li)
+    .nav-link-container {
+        list-style-type: none;
+        display: inline-block;
+        line-height: $size-height--navbar;
+        text-align: center;
+        height: 100%;
+        @include transition(0.5s);
+    }
+    // Link elements (a)
+    .nav-link {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 20px;
+    }
+}
