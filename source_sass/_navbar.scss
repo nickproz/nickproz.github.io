@@ -8,12 +8,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 10px;
 
     // @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active)
-    // Light theme
-    @include theme-navigation(  $color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));
-    // Dark theme
-    // @include theme-navigation($color-grayDark--navbar, $color-blueElectric--navbar, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));
+    @include theme-navigation($color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));  // Light theme
+    // @include theme-navigation($color-grayDark--navbar, $color-blueElectric--navbar, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));               // Dark theme
 
     // List elements (li)
     .nav-link-container {
@@ -23,11 +22,21 @@
         text-align: center;
         height: 100%;
         @include transition(0.5s);
+        flex-grow: 1;
     }
     // Link elements (a)
     .nav-link {
         text-decoration: none;
         display: inline-block;
         padding: 0 20px;
+    }
+
+    // Desktop styling
+    @media #{($break-tablet-portrait)} {
+        font-size: 14px;
+
+        .nav-link-container {
+            flex-grow: 0;
+        }
     }
 }

@@ -24,6 +24,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: 10px;
   background-color: #efefef; }
   .navigation .nav-link-container.nav-active {
     background-color: #47a3da; }
@@ -41,8 +42,14 @@ body {
     height: 100%;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    flex-grow: 1; }
   .navigation .nav-link {
     text-decoration: none;
     display: inline-block;
     padding: 0 20px; }
+  @media only screen and (min-width: 768px) {
+    .navigation {
+      font-size: 14px; }
+      .navigation .nav-link-container {
+        flex-grow: 0; } }
