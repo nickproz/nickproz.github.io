@@ -1,3 +1,39 @@
+// General Javascript
+$(document).ready(function() {
+
+	// Full Page Plugin Settings
+	$('#fullpage').fullpage({
+		anchors: ['top', 'about', 'work', 'connect', 'bottom'],
+		menu: '#menu',
+		fixedElements: '',
+		verticalCentered: false
+	});
+
+	// Responsive util
+	var desktopBreakpoint = 767;
+	var isDesktop = function() {
+		return $(window).width() > desktopBreakpoint;
+	}
+	// Fade body content in after page has loaded
+	$('body').css('visibility','visible').hide().fadeIn('fast');
+});
+
+// Experience Logic
+$(document).ready(function() {
+
+    // Modal initialization
+    $('.experience-tile').on('click touchstart', function() {
+        // Grab the current id value, prepend a hash, and remove tile from the selector (to get the actual modal selector)
+        var target = "#" + $(this).attr('id').replace('-tile', "");
+
+        // Modal initialization on the current clicked modal
+        $(target)
+        // .modal('setting', 'transition', 'horizontal flip')
+        .modal({blurring: true})
+        .modal('show');
+    })
+});
+
 // Menu Logic
 $(document).ready(function() {
     // Variables
@@ -42,7 +78,7 @@ $(document).ready(function() {
         if(hash === "#top") {
             setElementTransparency($nav, 1.0);
         } else {
-            setElementTransparency($nav, 0.8);
+            setElementTransparency($nav, 0.6);
         }
     }
 
@@ -71,23 +107,4 @@ $(document).ready(function() {
     };
 
     initMenu();
-});
-
-// General Javascript
-$(document).ready(function() {
-
-	// Full Page Plugin Settings
-	$('#fullpage').fullpage({
-		anchors: ['top', 'about', 'work', 'expertise', 'connect', 'bottom'],
-		menu: '#menu',
-		fixedElements: '#modal0, #modal1'
-	});
-
-	// Responsive util
-	var desktopBreakpoint = 767;
-	var isDesktop = function() {
-		return $(window).width() > desktopBreakpoint;
-	}
-	// Fade body content in after page has loaded
-	$('body').css('visibility','visible').hide().fadeIn('fast');
 });

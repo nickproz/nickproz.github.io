@@ -1,0 +1,32 @@
+#contact {
+    // Variables
+    $size-font--icons:          40px;
+    $size-margin--icons:        10px;
+    $percentage-hover--icons:   15%;
+
+    height: 100%;
+
+    // Footer styling
+    .footer {
+    	width: 100%;
+    	height: $size-height--navbar;
+    	text-align: center;
+    	background-color: $color-grayLight--navbar;
+    	bottom: 0;
+    	position: absolute;
+
+        i {
+            font-size: $size-font--icons;
+        	margin: 0 $size-margin--icons;
+        	color: $color-bluePale--navbar;
+
+            &:hover {
+                color: darken($color-bluePale--navbar, $percentage-hover--icons);
+            }
+        }
+
+        .contact-links {
+            @include vertical-center();
+        }
+    }
+}

@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 10px;
+    font-size: 12px;
 
     // @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active)
     @include theme-navigation($color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));  // Light theme
@@ -30,11 +30,8 @@
         display: inline-block;
         padding: 0 20px;
     }
-
     // Desktop styling
     @media #{($break-tablet-portrait)} {
-        font-size: 14px;
-
         .nav-link-container {
             flex-grow: 0;
         }

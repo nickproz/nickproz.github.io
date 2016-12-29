@@ -42,7 +42,7 @@ $(document).ready(function() {
         if(hash === "#top") {
             setElementTransparency($nav, 1.0);
         } else {
-            setElementTransparency($nav, 0.8);
+            setElementTransparency($nav, 0.6);
         }
     }
 

@@ -16,10 +16,11 @@
   "dependencies": {
     "jquery": "latest",
     "jquery-ui": "latest",
-	"bootstrap": "latest",
-	"slick-carousel": "latest",
-	"Hover": "latest",
-	"fontawesome": "latest",
-	"fullpage": "latest"
+    "bootstrap": "latest",
+    "slick-carousel": "latest",
+    "Hover": "latest",
+    "fontawesome": "latest",
+    "fullpage": "latest",
+    "semantic-ui": "latest"
   }
 }

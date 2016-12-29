@@ -1,0 +1,115 @@
+// Experience Section Styling
+#experience {
+    // Variables
+    $color-gray--experience-hover-text: #323232;
+    $color-gray--experience-text: #656565;
+    $size-font--experience-text: 11px;
+    $size-padding--experience-tile: 10px;
+    $size-height--experience-image-container: 130px;
+
+    @include vertical-center();
+
+    // Experience tile styling
+    .experience-tile {
+        display: inline-block;
+        padding-left: $size-padding--experience-tile;
+        padding-top: $size-padding--experience-tile;
+        width: 50%;
+        cursor: pointer;
+
+        &:hover {
+            .experience-text {
+                color: $color-gray--experience-hover-text;
+                text-shadow: 0 0 1px rgba(0,0,0,.5);
+            }
+            .experience-text-overlay {
+                opacity: 1;
+            }
+            .experience-image {
+                transform: scale(1.1);
+                -webkit-filter: brightness(45%);
+            }
+        }
+    }
+    .experience-image-container {
+        box-shadow: 1px 1px 1px #888888;
+        height: $size-height--experience-image-container;
+        overflow: hidden;
+        position: relative;
+    }
+    .experience-image {
+        @include transition(0.3s ease-in-out);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+
+        &.vodori {
+            background-image: url('../data/media/vodori.jpg');
+        }
+        &.argonne {
+            background-image: url('../data/media/argonne.jpg');
+        }
+        &.illinois {
+            background-image: url('../data/media/illinois.JPG');
+        }
+        &.illini-media {
+            background-image: url('../data/media/illini-media.jpg');
+        }
+        &.housing {
+            background-image: url('../data/media/housing.jpg');
+        }
+        &.ultimate {
+            background-image: url('../data/media/ultimate.jpg');
+        }
+        &.ultimate-website {
+            background-image: url('../data/media/ultimate-website.jpg');
+        }
+    }
+    .experience-text {
+        color: $color-gray--experience-text;
+        font-size: $size-font--experience-text;
+        margin: 0;
+        padding-top: 3px;
+        @include transition(0.3s);
+        display: none;
+    }
+    .experience-text-overlay {
+        @include vertical-center-2();
+        @include transition(0.3s);
+        font-size: $size-font--experience-text;
+        color: white;
+        opacity: 0;
+        width: 80%;
+        -webkit-backface-visibility: hidden;
+    }
+
+    // Tablet portrait styling (>767)
+    @media #{($break-tablet-portrait)} {
+        .experience-tile {
+            width: 33%;
+        }
+        .experience-image-container {
+            height: 170px;
+        }
+        .experience-text-overlay {
+            font-size: 14px;
+        }
+        .experience-text {
+            // display: none;
+        }
+    }
+
+    // Tablet landscape styling (>1024)
+    @media #{($break-tablet-landscape)} {
+        .experience-tile {
+            width: 25%;
+        }
+        .experience-image-container {
+            height: 200px;
+        }
+        .experience-text-overlay {
+            font-size: 16px;
+        }
+    }
+}
