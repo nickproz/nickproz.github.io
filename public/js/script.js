@@ -44,6 +44,7 @@ $(document).ready(function() {
 
     // Other variables
     var activeNavLinkClass = 'nav-active';
+    var fadeInBlockSelector = '.fade-in-block';
     var navLinks = ['#top', '#about', '#work', '#expertise', '#connect'];
 
     // Functions
@@ -62,6 +63,7 @@ $(document).ready(function() {
         var hash = window.location.hash;
         updateNavActiveItem(hash);
         updateNavOpacity(hash);
+        fadeInBlocks(hash);
     };
 
     // Updates the active link in our menu. Finds the <a> tag corresponding to the hash and adds the active class to its parent.
@@ -90,6 +92,19 @@ $(document).ready(function() {
         // Create our new rgba color to set with the passed in alpha value
         var newBackgroundColor='rgba('+colorChannels[0]+','+colorChannels[1]+','+colorChannels[2]+','+alpha+')';
         element.animate({backgroundColor:newBackgroundColor}, 500);
+    }
+
+    // Fade in each block in the current navigation section
+    var fadeInBlocks = function(hash) {
+        var $domNode = $(hash.replace("#", "."));
+        var $blocks = $domNode.find(fadeInBlockSelector);
+
+        // Only attempt to animate the blocks if they have an opacity of 0 (coming into view for the first time)
+        if($blocks.length > 0 && $($blocks[0]).css("opacity") === "0") {
+            $blocks.each(function(i){
+                $(this).delay(200*i).animate({'opacity':'1'},750);
+            });
+        }
     }
 
     // Listener for a hash change, updates our menu.

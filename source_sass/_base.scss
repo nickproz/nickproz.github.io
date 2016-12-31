@@ -23,6 +23,10 @@ body {
     font-size: 0;
 }
 
+.fade-in-block {
+    opacity: 0;
+}
+
 // Modal styling
 .modal {
     text-align: center;
@@ -56,4 +60,4 @@ body {
     .description {
         padding: 0 !important;
     }
-}    
+}

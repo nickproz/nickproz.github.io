@@ -6,6 +6,23 @@
 
     height: 100%;
 
+    .contact-image {
+        margin: 0 auto;
+        height: 200px;
+        width: 150px;
+    }
+    .contact-container {
+        @include vertical-center();
+    }
+    .contact-icon-container {
+        font-size: 12px;
+    }
+    .contact-icon {
+        display: block;
+        color: $color-bluePale--navbar;
+        font-size: 30px;
+    }
+
     // Footer styling
     .footer {
     	width: 100%;
