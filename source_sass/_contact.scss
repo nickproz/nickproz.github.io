@@ -1,9 +1,10 @@
+// Contact Styling
 #contact {
-    // Variables
+    // Local Variables
     $size-font--icons:          40px;
     $size-margin--icons:        10px;
-    $percentage-hover--icons:   15%;
 
+    // Styling
     height: 100%;
 
     .contact-image {
@@ -19,7 +20,7 @@
     }
     .contact-icon {
         display: block;
-        color: $color-bluePale--navbar;
+        margin-bottom: 10px;
         font-size: 30px;
     }
 
@@ -28,21 +29,14 @@
     	width: 100%;
     	height: $size-height--navbar;
     	text-align: center;
-    	background-color: $color-grayLight--navbar;
     	bottom: 0;
     	position: absolute;
 
-        i {
+        .footer-link {
             font-size: $size-font--icons;
         	margin: 0 $size-margin--icons;
-        	color: $color-bluePale--navbar;
-
-            &:hover {
-                color: darken($color-bluePale--navbar, $percentage-hover--icons);
-            }
         }
-
-        .contact-links {
+        .footer-links {
             @include vertical-center();
         }
     }

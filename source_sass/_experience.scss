@@ -1,15 +1,15 @@
-// Experience Section Styling
+// Experience Styling
 #experience {
-    // Variables
+    // Local Variables
     $color-gray--experience-hover-text: #323232;
     $color-gray--experience-text: #656565;
     $size-font--experience-text: 11px;
     $size-padding--experience-tile: 10px;
     $size-height--experience-image-container: 130px;
 
+    // Styling
     @include vertical-center();
 
-    // Experience tile styling
     .experience-tile {
         display: inline-block;
         padding-left: $size-padding--experience-tile;
@@ -96,7 +96,7 @@
             font-size: 14px;
         }
         .experience-text {
-            // display: none;
+            display: none;
         }
     }
 

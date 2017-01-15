@@ -9,7 +9,7 @@ $(document).ready(function() {
     // Other variables
     var activeNavLinkClass = 'nav-active';
     var fadeInBlockSelector = '.fade-in-block';
-    var navLinks = ['#top', '#about', '#work', '#expertise', '#connect'];
+    var navLinks = ['#top', '#about', '#work', '#connect'];
 
     // Functions
     // --------------------------------------------------
@@ -23,10 +23,16 @@ $(document).ready(function() {
 
     // Updates our menu by updating the active nav link item and updating the opacity
     // of our navbar based on where on the page we are.
-    var updateMenu = function() {
-        var hash = window.location.hash;
+    var updateMenu = function(nextIndex) {
+        var hash;
+        // If a slide next index is provided, use that, otherwise, grab the hash
+        if(nextIndex) {
+            hash = navLinks[nextIndex-1];
+        } else {
+            hash = window.location.hash;
+        }
         updateNavActiveItem(hash);
-        updateNavOpacity(hash);
+        //updateNavOpacity(hash);
         fadeInBlocks(hash);
     };
 
@@ -66,7 +72,7 @@ $(document).ready(function() {
         // Only attempt to animate the blocks if they have an opacity of 0 (coming into view for the first time)
         if($blocks.length > 0 && $($blocks[0]).css("opacity") === "0") {
             $blocks.each(function(i){
-                $(this).delay(200*i).animate({'opacity':'1'},750);
+                $(this).delay(300*i).animate({'opacity':'1'},1000);
             });
         }
     }
@@ -79,11 +85,22 @@ $(document).ready(function() {
     };
 
     // Initialize our menu by reseting our hash if necessary, updating our menu, and calling our listener.
-    var initMenu = function() {
+    (function() {
         resetHash();
         updateMenu();
         hashListener();
-    };
+    })();
 
-    initMenu();
+    // Full Page Plugin Settings
+	$('#fullpage').fullpage({
+		anchors: ['top', 'about', 'work', 'connect'],
+		menu: '#menu',
+		fixedElements: '',
+		verticalCentered: false,
+		autoScrolling: false,
+        showActiveTooltip: true,
+		onLeave: function(index, nextIndex, direction){
+			updateMenu(nextIndex);
+        }
+	});
 });

@@ -1,10 +1,11 @@
+// About styling
 #about-me {
-    // Variables
+    // Local Variables
     $size-font--description: 16px;
 
+    // Styles
     height: 100%;
 
-    // About styling
     .about-me-grid {
         @include vertical-center();
     }

@@ -1,15 +1,15 @@
-// Home Section Styling
+// Home Styling
 #home {
-    // Variables
+    // Local Variables
     $size-height--home-button:  100px;
     $size-width--home-button:   35px;
     $size-font--home-button:    4rem;
 
+    // Styling
     @include transform(translateZ(0));
     height: 100%;
     overflow: hidden;
 
-    // Home styling
     .home-background-image {
       @include transform(scale(1.1));
       height: 100%;
@@ -19,8 +19,9 @@
       background-image: url("../data/media/home.jpg");
       background-size: cover;
       background-position: center;
-      background-color:$color-blueElectric--navbar;
+    //   background-color: $color-blueElectric--navbar;
   	  background-blend-mode: multiply;
+      background-attachment: fixed;
     }
     .home-content {
         @include vertical-center();
