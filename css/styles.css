@@ -1,0 +1,474 @@
+/*
+Below are standard media breakpoints. Always use mobile-first media queries,
+as you should be designing mobile-first. If a mobile-first approach can not
+be used for whatever reason, max-width queries are also listed below.
+
+example (usage): @media break-tablet-portrait {}
+
+------------------------------------------
+|               Breakpoints              |
+------------------------------------------
+*/
+/*
+---------------------------------------------------------
+|               Mobile-first Media Queries              |
+---------------------------------------------------------
+*/
+/*
+-----------------------------------------------------------------------
+|               Max-width Breakpoints (Non-mobile First)              |
+-----------------------------------------------------------------------
+*/
+/*
+-------------------------------------------------------------------------
+|               Max-width Media Queries (Non-mobile First)              |
+-------------------------------------------------------------------------
+*/
+/*
+Z-index values should always be defined here. This allows us to, at a glance,
+determine relative layers of our application and prevents bugs arising from
+arbitrary z-index values. Do not edit the z-index scale! Only add application
+scoped z-index values.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+--------------------------------------------
+|               Z-index Scale              |
+--------------------------------------------
+*/
+/*
+--------------------------------------------------
+|               Z-index Applications             |
+--------------------------------------------------
+*/
+/*
+All global variables are stored here. They should be created based on the following format:
+<property>-<value>[--componentName]. Variables used for different sections are
+separated by by comment sections.
+
+example (creation): $color-background--navbar: red;
+example (usage): background-color: $color-background--navbar;
+
+-------------------------------------
+|               Colors              |
+-------------------------------------
+*/
+/*
+------------------------------------
+|               Sizes              |
+------------------------------------
+*/
+/*
+------------------------------------
+|               Fonts              |
+------------------------------------
+*/
+/*
+All mixins are stored here.
+
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
+/*
+-------------------------------------------
+|               Theme Mixins              |
+-------------------------------------------
+*/
+.blue-white-theme #home .home-background-image {
+  background-color: #47a3da; }
+
+.blue-white-theme .navigation {
+  background-color: white; }
+  .blue-white-theme .navigation .nav-link-container.nav-active {
+    background-color: #47a3da; }
+    .blue-white-theme .navigation .nav-link-container.nav-active .nav-link {
+      color: white; }
+  .blue-white-theme .navigation .nav-link-container:hover:not(.nav-active) {
+    background-color: #f2f2f2; }
+  .blue-white-theme .navigation .nav-link {
+    color: #47a3da; }
+
+.blue-white-theme #contact .contact-icon {
+  color: #47a3da; }
+
+.blue-white-theme #contact .footer {
+  background-color: white; }
+  .blue-white-theme #contact .footer .footer-link {
+    color: #47a3da; }
+    .blue-white-theme #contact .footer .footer-link:hover {
+      color: #174f71; }
+
+.blue-black-theme #home .home-background-image {
+  background-color: #0cf; }
+
+.blue-black-theme .navigation {
+  background-color: #404040; }
+  .blue-black-theme .navigation .nav-link-container.nav-active {
+    background-color: #0cf; }
+    .blue-black-theme .navigation .nav-link-container.nav-active .nav-link {
+      color: #404040; }
+  .blue-black-theme .navigation .nav-link-container:hover:not(.nav-active) {
+    background-color: #4d4d4d; }
+  .blue-black-theme .navigation .nav-link {
+    color: white; }
+
+.blue-black-theme #contact .contact-icon {
+  color: #0cf; }
+
+.blue-black-theme #contact .footer {
+  background-color: #404040; }
+  .blue-black-theme #contact .footer .footer-link {
+    color: #0cf; }
+    .blue-black-theme #contact .footer .footer-link:hover {
+      color: #b3b3b3; }
+
+.red-white-theme #home .home-background-image {
+  background-color: #e55; }
+
+.red-white-theme .navigation {
+  background-color: white; }
+  .red-white-theme .navigation .nav-link-container.nav-active {
+    background-color: #e55; }
+    .red-white-theme .navigation .nav-link-container.nav-active .nav-link {
+      color: white; }
+  .red-white-theme .navigation .nav-link-container:hover:not(.nav-active) {
+    background-color: #f2f2f2; }
+  .red-white-theme .navigation .nav-link {
+    color: #e55; }
+
+.red-white-theme #contact .contact-icon {
+  color: #e55; }
+
+.red-white-theme #contact .footer {
+  background-color: white; }
+  .red-white-theme #contact .footer .footer-link {
+    color: #e55; }
+    .red-white-theme #contact .footer .footer-link:hover {
+      color: #9b0f0f; }
+
+.red-black-theme #home .home-background-image {
+  background-color: #e55; }
+
+.red-black-theme .navigation {
+  background-color: #404040; }
+  .red-black-theme .navigation .nav-link-container.nav-active {
+    background-color: #e55; }
+    .red-black-theme .navigation .nav-link-container.nav-active .nav-link {
+      color: #404040; }
+  .red-black-theme .navigation .nav-link-container:hover:not(.nav-active) {
+    background-color: #4d4d4d; }
+  .red-black-theme .navigation .nav-link {
+    color: white; }
+
+.red-black-theme #contact .contact-icon {
+  color: #e55; }
+
+.red-black-theme #contact .footer {
+  background-color: #404040; }
+  .red-black-theme #contact .footer .footer-link {
+    color: #e55; }
+    .red-black-theme #contact .footer .footer-link:hover {
+      color: #b3b3b3; }
+
+/*
+---------------------------------------------
+|               Global Styling              |
+---------------------------------------------
+*/
+#fullpage .section {
+  text-align: center;
+  padding-top: 50px; }
+
+html, body {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  visibility: hidden;
+  background-color: #f0f0f0; }
+
+.container-inner {
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 0; }
+
+.fade-in-block {
+  opacity: 0; }
+
+.modal {
+  text-align: center;
+  font-size: 0; }
+  .modal .experience-modal-location {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold; }
+  .modal .experience-modal-role {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    font-style: italic; }
+  .modal .experience-modal-time {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px; }
+  .modal .experience-modal-description {
+    font-size: 11px;
+    margin-top: 15px; }
+  .modal .experience-modal-image {
+    height: 120px;
+    width: 120px; }
+  .modal .description {
+    padding: 0 !important; }
+
+/*
+-------------------------------------------------
+|               Navigation Styling              |
+-------------------------------------------------
+*/
+.navigation {
+  height: 50px;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px; }
+  .navigation .nav-link-container {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    height: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    flex-grow: 1; }
+  .navigation .nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold; }
+  @media only screen and (min-width: 768px) {
+    .navigation .nav-link-container {
+      flex-grow: 0; } }
+
+/*
+-------------------------------------------
+|               Home Styling              |
+-------------------------------------------
+*/
+#home {
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  height: 100%;
+  overflow: hidden; }
+  #home .home-background-image {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: url("../data/media/home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed; }
+  #home .home-content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #home .home-text {
+    color: white;
+    font-size: 4rem; }
+  #home .home-button {
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+    border: 1px solid white;
+    cursor: pointer; }
+    #home .home-button.hover {
+      background-color: white; }
+  #home .home-button-text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #home .home-button-link {
+    color: white;
+    text-decoration: none; }
+  @media only screen and (min-width: 768px) {
+    #home .home-text {
+      font-size: 5rem;
+      margin-bottom: 30px; } }
+
+/*
+--------------------------------------------
+|               About Styling              |
+--------------------------------------------
+*/
+#about-me {
+  height: 100%; }
+  #about-me .about-me-grid {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #about-me .about-me-image {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #about-me .about-me-description {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px; }
+
+/*
+-------------------------------------------------
+|               Experience Styling              |
+-------------------------------------------------
+*/
+#experience {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  #experience .experience-tile {
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 50%;
+    cursor: pointer; }
+    #experience .experience-tile:hover .experience-text {
+      color: #323232;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+    #experience .experience-tile:hover .experience-text-overlay {
+      opacity: 1; }
+    #experience .experience-tile:hover .experience-image {
+      transform: scale(1.1);
+      -webkit-filter: brightness(45%); }
+  #experience .experience-image-container {
+    box-shadow: 1px 1px 1px #888888;
+    height: 130px;
+    overflow: hidden;
+    position: relative; }
+  #experience .experience-image {
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%; }
+    #experience .experience-image.vodori {
+      background-image: url("../data/media/vodori.jpg"); }
+    #experience .experience-image.argonne {
+      background-image: url("../data/media/argonne.jpg"); }
+    #experience .experience-image.illinois {
+      background-image: url("../data/media/illinois.JPG"); }
+    #experience .experience-image.illini-media {
+      background-image: url("../data/media/illini-media.jpg"); }
+    #experience .experience-image.housing {
+      background-image: url("../data/media/housing.jpg"); }
+    #experience .experience-image.ultimate {
+      background-image: url("../data/media/ultimate.jpg"); }
+    #experience .experience-image.ultimate-website {
+      background-image: url("../data/media/ultimate-website.jpg"); }
+  #experience .experience-text {
+    color: #656565;
+    font-size: 11px;
+    margin: 0;
+    padding-top: 3px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: none; }
+  #experience .experience-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 11px;
+    color: white;
+    opacity: 0;
+    width: 80%;
+    -webkit-backface-visibility: hidden; }
+  @media only screen and (min-width: 768px) {
+    #experience .experience-tile {
+      width: 33%; }
+    #experience .experience-image-container {
+      height: 170px; }
+    #experience .experience-text-overlay {
+      font-size: 14px; }
+    #experience .experience-text {
+      display: none; } }
+  @media only screen and (min-width: 1024px) {
+    #experience .experience-tile {
+      width: 25%; }
+    #experience .experience-image-container {
+      height: 200px; }
+    #experience .experience-text-overlay {
+      font-size: 16px; } }
+
+/*
+----------------------------------------------
+|               Contact Styling              |
+----------------------------------------------
+*/
+#contact {
+  height: 100%; }
+  #contact .contact-image {
+    margin: 0 auto;
+    height: 200px;
+    width: 150px; }
+  #contact .contact-container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #contact .contact-icon-container {
+    font-size: 12px; }
+  #contact .contact-icon {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  #contact .footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+    position: absolute; }
+    #contact .footer .footer-link {
+      font-size: 40px;
+      margin: 0 10px; }
+    #contact .footer .footer-links {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Nick Prozorovsky</title>
+  <link rel="shortcut icon" href="./data/media/crest.ico" />
+
+  <!-- Stylesheets -->
+  <!-- <link rel="stylesheet" href="./dependencies/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./dependencies/Hover/css/hover-min.css">
+  <link rel="stylesheet" href="./dependencies/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./dependencies/fullpage/dist/jquery.fullpage.css">
+  <link rel="stylesheet" href="./dependencies/semantic-ui/dist/semantic.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="./dependencies/jquery/dist/jquery.min.js"></script>
+  <script src="./dependencies/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./dependencies/fullpage/dist/jquery.fullpage.min.js"></script>
+  <script src="./dependencies/fullpage/dist/jquery.fullpage.extensions.min.js"></script>
+  <script src="./dependencies/semantic-ui/dist/semantic.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</head>
+<body class="blue-white-theme">
+    <!-- NAVIGATION -->
+    <ul class="navigation" id="menu">
+        <li data-menuanchor="top" class="nav-link-container"><a href="#top" class="nav-link">Home</a></li>
+        <li data-menuanchor="about" class="nav-link-container"><a href="#about" class="nav-link">About Me</a></li>
+        <li data-menuanchor="work" class="nav-link-container"><a href="#work" class="nav-link">Experience</a></li>
+        <li data-menuanchor="connect" class="nav-link-container"><a href="#connect" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+		<!-- HOME -->
+        <div class="section" style="padding-top: 0">
+    		<div id="home" class="top">
+                <div class="home-background-image"></div>
+                <div class="home-content">
+                    <p class="home-text fade-in-block">Hi, I'm Nick.</p>
+                    <a href="./data/media/Nick-Prozorovsky-Résumé.pdf" class="home-button-link" target="_blank">
+                        <div class="home-button fade-in-block">
+                            <p class="home-button-text">Résumé</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+		<!-- ABOUT ME -->
+        <div class="section">
+    		<div id="about-me" class="about">
+                <div class="container-inner">
+                    <div class="two column stackable ui grid about-me-grid">
+                      <div class="column">
+                        <img class="ui medium circular image about-me-image fade-in-block" src="./data/media/me.jpg"/>
+                      </div>
+                      <div class="column">
+                        <p class="about-me-description fade-in-block">Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc dui ex, fermentum a massa ac, tempor suscipit purus. Donec lobortis nisl enim, vitae sagittis nibh tincidunt in. Praesent bibendum velit ut elit euismod dignissim. Sed eu massa quis nisi ultrices interdum eu non magna. Donec accumsan massa turpis, eget mattis urna dictum vitae. Etiam at egestas nisl.</p>
+                      </div>
+                    </div>
+                </div>
+    		</div>
+        </div>
+
+		<!-- EXPERIENCE -->
+        <div class="section">
+    		<div id="experience" class="work">
+                <div class="container-inner">
+                    <!-- EXPERIENCE TILES -->
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-vodori">
+                        <div class="experience-image-container">
+                            <div class="experience-image vodori"></div>
+                            <p class="experience-text-overlay">Vodori</p>
+                        </div>
+                        <p class="experience-text">Vodori</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-argonne">
+                        <div class="experience-image-container">
+                            <div class="experience-image argonne"></div>
+                            <p class="experience-text-overlay">Argonne Laboratory</p>
+                        </div>
+                        <p class="experience-text">Argonne Laboratory</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-illinois">
+                        <div class="experience-image-container">
+                            <div class="experience-image illinois"></div>
+                            <p class="experience-text-overlay">University of Illinois</p>
+                        </div>
+                        <p class="experience-text">University of Illinois</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-illini-media">
+                        <div class="experience-image-container">
+                            <div class="experience-image illini-media"></div>
+                            <p class="experience-text-overlay">Illini Media</p>
+                        </div>
+                        <p class="experience-text">Illini Media</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-housing">
+                        <div class="experience-image-container">
+                            <div class="experience-image housing"></div>
+                            <p class="experience-text-overlay">University Housing</p>
+                        </div>
+                        <p class="experience-text">University Housing</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-ultimate">
+                        <div class="experience-image-container">
+                            <div class="experience-image ultimate"></div>
+                            <p class="experience-text-overlay">Illinois Ultimate Frisbee</p>
+                        </div>
+                        <p class="experience-text">Illinois Ultimate Frisbee</p>
+                    </div>
+                    <div class="experience-tile fade-in-block" id="experience-modal-tile-ultimate-website">
+                        <div class="experience-image-container">
+                            <div class="experience-image ultimate-website"></div>
+                            <p class="experience-text-overlay">Illinois Ultimate Website</p>
+                        </div>
+                        <p class="experience-text">Illinois Ultimate Website</p>
+                    </div>
+
+                    <!-- EXPERIENCE MODALS -->
+                    <div class="ui modal" id="experience-modal-vodori">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">Vodori</h2>
+                          <h3 class="experience-modal-role">Consulting Software Engineer</h3>
+                          <h4 class="experience-modal-time">Chicago, IL | June 2016 - Present</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/vodori-logo.png"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description"></li>
+                                <li class="experience-modal-description"></li>
+                                <li class="experience-modal-description"></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-argonne">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">University of Chicago at Argonne National Laboratory</h2>
+                          <h3 class="experience-modal-role">Computation Institute Intern</h3>
+                          <h4 class="experience-modal-time">Lemont, IL | June 2013 - Sept. 2013</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/argonne-logo.jpg"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Enhanced back-end processes and coded genomic analysis programs for Globus Genomics</li>
+                                <li class="experience-modal-description">Created new dynamic computer program/tool adapted by group</li>
+                                <li class="experience-modal-description">Wrote research paper with Ian Foster which was accepted at WORKS Supercomputing Conference/Workshop</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-illinois">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">University of Illinois</h2>
+                          <h3 class="experience-modal-role">ECE 220 Grader/Lab Assistant</h3>
+                          <h4 class="experience-modal-time">Champaign, IL | Jan. 2015 - Jan. 2016</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/illinois-logo.jpg"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Analyzed student code for accuracy and efficiency</li>
+                                <li class="experience-modal-description">Held office hours to aid students with homework and machine problems</li>
+                                <li class="experience-modal-description">Offered assistance to students during designated lab sections and office hours</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-illini-media">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">Illini Media Company</h2>
+                          <h3 class="experience-modal-role">IT Technician</h3>
+                          <h4 class="experience-modal-time">Champaign, IL | Oct. 2014 - Oct. 2015</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/illini-media-logo.png"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Improved and monitored back-end server procedures</li>
+                                <li class="experience-modal-description">Provided support for employees with technology-related issues</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-housing">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">University of Illinois Housing</h2>
+                          <h3 class="experience-modal-role">Desk Clerk</h3>
+                          <h4 class="experience-modal-time">Champaign, IL | Aug. 2013 - May 2016</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/housing-logo.png"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Assisted students to create best possible living experience</li>
+                                <li class="experience-modal-description">Managed building security, handle mail, and administer tours to prospective students</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-ultimate">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">Ultimate Frisbee Varsity Club</h2>
+                          <h3 class="experience-modal-role">Captain</h3>
+                          <h4 class="experience-modal-time">Champaign, IL | May 2014 - May 2016</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/ultimate-logo.png"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Captain of the varsity team and entire club (150+)</li>
+                                <li class="experience-modal-description">Generated practice plans, organize tournaments, coordinate events</li>
+                                <li class="experience-modal-description">Be a leader for the team on and off the field, set an example for the entire club</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui modal" id="experience-modal-ultimate-website">
+                      <i class="close icon"></i>
+                      <div class="header">
+                          <h2 class="experience-modal-location">Ultimate Frisbee Website</h2>
+                          <h3 class="experience-modal-role">Creator</h3>
+                          <h4 class="experience-modal-time">-</h4>
+                      </div>
+                      <div class="image content">
+                        <div class="image">
+                          <img class="experience-modal-image" src="./data/media/logos/ultimate-website-logo.png"/>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li class="experience-modal-description">Built the club website from scratch, maintain it to keep it up-to-date (illinoisultimate.com)</li>
+                                <li class="experience-modal-description"></li>
+                                <li class="experience-modal-description"></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    	    </div>
+        </div>
+
+		<!-- CONTACT -->
+        <div class="section">
+    		<div id="contact" class="connect">
+                <div class="container-inner">
+                    <div class="contact-container">
+                        <div class="one column ui grid">
+                            <div class="column">
+                                <img class="contact-image fade-in-block" src="./data/media/me.png" />
+                            </div>
+                        </div>
+                        <div class="five column stackable ui grid">
+                            <div class="column"></div>
+                            <div class="column">
+                                <div class="contact-icon-container fade-in-block"><a><i class="fa fa-male contact-icon" aria-hidden="true"></i></a>Nicholas Prozorovsky </div>
+                            </div>
+                            <div class="column">
+        					    <div class="contact-icon-container fade-in-block"><a><i class="fa fa-mobile contact-icon" aria-hidden="true"></i></a>630-200-8105</div>
+                            </div>
+                            <div class="column">
+        					    <div class="contact-icon-container fade-in-block"><a><i class="fa fa-envelope-o contact-icon" aria-hidden="true"></i></a>nick.prozorovsky @ gmail.com</div>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-links">
+                        <a href="https://www.facebook.com/prozorovsky" target="_blank"><i class="fa fa-facebook-square footer-link"></i></a>
+    					<a href="https://twitter.com/nickproz" target="_blank"><i class="fa fa-twitter-square footer-link"></i></a>
+    					<a href="https://www.instagram.com/nickproz/" target="_blank"><i class="fa fa-instagram footer-link"></i></a>
+    					<a href="https://www.linkedin.com/in/nicholas-prozorovsky-367b4b90" target="_blank"><i class="fa fa-linkedin-square footer-link"></i></a>
+                    </div>
+				</div>
+    		</div>
+        </div>
+	</div>
+</body>
+</html>
