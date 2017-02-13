@@ -1,0 +1,47 @@
+/*
+All mixins are stored here.
+
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
+// Vertical centering
+@mixin vertical-center() {
+     position:          relative;
+     top:               50%;
+     -webkit-transform: translateY(-50%);
+     -ms-transform:     translateY(-50%);
+     transform:         translateY(-50%);
+}
+
+// Second vertical centering
+@mixin vertical-center-2() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Transition
+@mixin transition($seconds) {
+    -moz-transition:    all $seconds;
+    -webkit-transition: all $seconds;
+    transition:         all $seconds;
+}
+
+// Transform
+@mixin transform($property) {
+    -moz-transform: $property;
+    -webkit-transform: $property;
+    transform: $property;
+}
+
+// Blur
+@mixin blur($pixels) {
+    -webkit-filter: blur($pixels);
+    -moz-filter: blur($pixels);
+    -ms-filter: blur($pixels);
+    filter: blur($pixels);
+}

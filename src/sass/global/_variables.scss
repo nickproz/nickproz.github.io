@@ -1,0 +1,34 @@
+/*
+All global variables are stored here. They should be created based on the following format:
+<property>-<value>[--componentName]. Variables used for different sections are
+separated by by comment sections.
+
+example (creation): $color-background--navbar: red;
+example (usage): background-color: $color-background--navbar;
+
+-------------------------------------
+|               Colors              |
+-------------------------------------
+*/
+$color-grayLight--navbar: 			white;
+// $color-grayLight--navbar: 			#efefef;
+$color-grayLight--body:             #f0f0f0;
+$color-grayDark--navbar: 			#404040;
+$color-bluePale--navbar: 		    #47a3da;
+$color-blueElectric--navbar: 		#0cf;
+$color-redLight--navbar:            #e55;
+
+/*
+------------------------------------
+|               Sizes              |
+------------------------------------
+*/
+$size-height--navbar:               50px;
+
+/*
+------------------------------------
+|               Fonts              |
+------------------------------------
+*/
+// $font-family--site:       'Rubik', sans-serif;
+$font-family--site:       'Montserrat', sans-serif;

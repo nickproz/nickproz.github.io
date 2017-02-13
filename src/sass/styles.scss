@@ -3,17 +3,17 @@
 
 // All sections
 // --------------------------------------------------
-@import "breakpoints";
-@import "z-index";
-@import "variables";
-@import "mixins";
-@import "themes";
+@import "util/breakpoints";
+@import "util/z-index";
+@import "global/variables";
+@import "global/mixins";
+@import "global/themes";
 
 // Individual sections
 // --------------------------------------------------
-@import "base";
-@import "navbar";
-@import "home";
-@import "about";
-@import "experience";
-@import "contact";
+@import "sections/base";
+@import "sections/navbar";
+@import "sections/home";
+@import "sections/about";
+@import "sections/experience";
+@import "sections/contact";

@@ -1,0 +1,39 @@
+/*
+-------------------------------------------------
+|               Navigation Styling              |
+-------------------------------------------------
+*/
+.navigation {
+    height: $size-height--navbar;
+    z-index: $zIndex-10--navigationMenu;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+
+    .nav-link-container {
+        list-style-type: none;
+        display: inline-block;
+        line-height: $size-height--navbar;
+        text-align: center;
+        height: 100%;
+        @include transition(0.5s);
+        flex-grow: 1;
+    }
+    .nav-link {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+
+    // Tablet portrait styling (>767)
+    @media #{($break-tablet-portrait)} {
+        .nav-link-container {
+            flex-grow: 0;
+        }
+    }
+}

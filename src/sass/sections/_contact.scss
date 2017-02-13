@@ -1,0 +1,47 @@
+/*
+----------------------------------------------
+|               Contact Styling              |
+----------------------------------------------
+*/
+#contact {
+    // Local Variables
+    $size-font--icons:          40px;
+    $size-margin--icons:        10px;
+
+    // Styling
+    height: 100%;
+
+    .contact-image {
+        margin: 0 auto;
+        height: 200px;
+        width: 150px;
+    }
+    .contact-container {
+        @include vertical-center();
+    }
+    .contact-icon-container {
+        font-size: 12px;
+    }
+    .contact-icon {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    // Footer styling
+    .footer {
+    	width: 100%;
+    	height: $size-height--navbar;
+    	text-align: center;
+    	bottom: 0;
+    	position: absolute;
+
+        .footer-link {
+            font-size: $size-font--icons;
+        	margin: 0 $size-margin--icons;
+        }
+        .footer-links {
+            @include vertical-center();
+        }
+    }
+}
