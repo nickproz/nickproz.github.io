@@ -20,3 +20,9 @@ gulp
 
 After running bower install, Jquery and Angular will be installed.
 Optional dependencies installed include: Bootstrap, hover, font awesome, slick, and full page.
+
+Use the following commands to deploy to github pages:
+```bash
+git push origin --delete gh-pages
+git subtree push --prefix dist origin gh-pages
+```
