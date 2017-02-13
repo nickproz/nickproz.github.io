@@ -1,9 +1,12 @@
-// ALl mixins are stored here.
-//
-// example (usage): @include vertical-center();
+/*
+All mixins are stored here.
 
-// General mixins
-// --------------------------------------------------
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
 // Vertical centering
 @mixin vertical-center() {
      position:          relative;

@@ -1,5 +1,8 @@
-// Theme mixins
-// --------------------------------------------------
+/*
+-------------------------------------------
+|               Theme Mixins              |
+-------------------------------------------
+*/
 @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active, $hover-color) {
     #home {
         .home-background-image {

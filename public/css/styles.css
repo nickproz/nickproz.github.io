@@ -1,3 +1,83 @@
+/*
+Below are standard media breakpoints. Always use mobile-first media queries,
+as you should be designing mobile-first. If a mobile-first approach can not
+be used for whatever reason, max-width queries are also listed below.
+
+example (usage): @media break-tablet-portrait {}
+
+------------------------------------------
+|               Breakpoints              |
+------------------------------------------
+*/
+/*
+---------------------------------------------------------
+|               Mobile-first Media Queries              |
+---------------------------------------------------------
+*/
+/*
+-----------------------------------------------------------------------
+|               Max-width Breakpoints (Non-mobile First)              |
+-----------------------------------------------------------------------
+*/
+/*
+-------------------------------------------------------------------------
+|               Max-width Media Queries (Non-mobile First)              |
+-------------------------------------------------------------------------
+*/
+/*
+Z-index values should always be defined here. This allows us to, at a glance,
+determine relative layers of our application and prevents bugs arising from
+arbitrary z-index values. Do not edit the z-index scale! Only add application
+scoped z-index values.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+--------------------------------------------
+|               Z-index Scale              |
+--------------------------------------------
+*/
+/*
+--------------------------------------------------
+|               Z-index Applications             |
+--------------------------------------------------
+*/
+/*
+All global variables are stored here. They should be created based on the following format:
+<property>-<value>[--componentName]. Variables used for different sections are
+separated by by comment sections.
+
+example (creation): $color-background--navbar: red;
+example (usage): background-color: $color-background--navbar;
+
+-------------------------------------
+|               Colors              |
+-------------------------------------
+*/
+/*
+------------------------------------
+|               Sizes              |
+------------------------------------
+*/
+/*
+------------------------------------
+|               Fonts              |
+------------------------------------
+*/
+/*
+All mixins are stored here.
+
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
+/*
+-------------------------------------------
+|               Theme Mixins              |
+-------------------------------------------
+*/
 .blue-white-theme #home .home-background-image {
   background-color: #47a3da; }
 
@@ -94,6 +174,11 @@
     .red-black-theme #contact .footer .footer-link:hover {
       color: #b3b3b3; }
 
+/*
+---------------------------------------------
+|               Global Styling              |
+---------------------------------------------
+*/
 #fullpage .section {
   text-align: center;
   padding-top: 50px; }
@@ -141,6 +226,11 @@ body {
   .modal .description {
     padding: 0 !important; }
 
+/*
+-------------------------------------------------
+|               Navigation Styling              |
+-------------------------------------------------
+*/
 .navigation {
   height: 50px;
   z-index: 1000;
@@ -164,11 +254,17 @@ body {
   .navigation .nav-link {
     text-decoration: none;
     display: inline-block;
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-weight: bold; }
   @media only screen and (min-width: 768px) {
     .navigation .nav-link-container {
       flex-grow: 0; } }
 
+/*
+-------------------------------------------
+|               Home Styling              |
+-------------------------------------------
+*/
 #home {
   -moz-transform: translateZ(0);
   -webkit-transform: translateZ(0);
@@ -219,6 +315,11 @@ body {
       font-size: 5rem;
       margin-bottom: 30px; } }
 
+/*
+--------------------------------------------
+|               About Styling              |
+--------------------------------------------
+*/
 #about-me {
   height: 100%; }
   #about-me .about-me-grid {
@@ -242,6 +343,11 @@ body {
     transform: translateY(-50%);
     font-size: 16px; }
 
+/*
+-------------------------------------------------
+|               Experience Styling              |
+-------------------------------------------------
+*/
 #experience {
   position: relative;
   top: 50%;
@@ -328,6 +434,11 @@ body {
     #experience .experience-text-overlay {
       font-size: 16px; } }
 
+/*
+----------------------------------------------
+|               Contact Styling              |
+----------------------------------------------
+*/
 #contact {
   height: 100%; }
   #contact .contact-image {

@@ -1,4 +1,8 @@
-// Navigation Styling
+/*
+-------------------------------------------------
+|               Navigation Styling              |
+-------------------------------------------------
+*/
 .navigation {
     height: $size-height--navbar;
     z-index: $zIndex-10--navigationMenu;
@@ -23,6 +27,7 @@
         text-decoration: none;
         display: inline-block;
         padding: 0 20px;
+        font-weight: bold;
     }
 
     // Tablet portrait styling (>767)
