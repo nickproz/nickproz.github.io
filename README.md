@@ -14,15 +14,15 @@ gulp
 - `source_js` folder - all javascript files here will be uglified and put in `public/js/script.js`.
 - `public/data/media` - all your media files (images, videos, GIFs etc.) go here.
 
+Use the following commands to deploy to github pages:
+```bash
+git push origin --delete gh-pages
+git subtree push --prefix dist origin gh-pages
+```
+
 **Do not edit anything under the `public\css` and `public\js` folders.** All things there are auto-generated and any changes you make there will get overwritten by Gulp.
 
 # Dependencies
 
 After running bower install, Jquery and Angular will be installed.
 Optional dependencies installed include: Bootstrap, hover, font awesome, slick, and full page.
-
-Use the following commands to deploy to github pages:
-```bash
-git push origin --delete gh-pages
-git subtree push --prefix dist origin gh-pages
-```
