@@ -6,25 +6,25 @@ var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
-    gulp.src('source_sass/*.scss')
+    gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('public/css/'));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('clean-scripts', function () {
-    return gulp.src('public/js/*.js', {read: false})
+    return gulp.src('dist/js/*.js', {read: false})
                .pipe(clean());
 });
 
 gulp.task('js', ['clean-scripts'], function() {
-  gulp.src('source_js/*.js')
+  gulp.src('src/js/*.js')
     .pipe(concat('script.js'))
-    //.pipe(uglify())
-    .pipe(gulp.dest('public/js/'));
+    //.pipe(uglify()) // Comment this line out for debugging
+    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('serve', function () {
-    gulp.src('./public')
+    gulp.src('./dist')
         .pipe(server({
             livereload: true,
 			fallback: 'index.html',
@@ -34,8 +34,8 @@ gulp.task('serve', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('source_sass/*.scss', ['sass']);
-    gulp.watch('source_js/*.js', ['js']);
+    gulp.watch('src/sass/*.scss', ['sass']);
+    gulp.watch('src/js/*.js', ['js']);
 });
 
 gulp.task('default', ['sass', 'js', 'serve', 'watch']);
@@ -44,4 +44,4 @@ gulp.task('default', ['sass', 'js', 'serve', 'watch']);
 process.on('uncaughtException', function(error) {
     console.log(error);
     process.exit(1)
-})
+});
