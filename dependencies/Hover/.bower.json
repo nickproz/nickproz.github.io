@@ -33,6 +33,6 @@
     "commit": "948508aefa886794c7d5ec508eda9e95b9a5a233"
   },
   "_source": "https://github.com/IanLunn/Hover.git",
-  "_target": "*",
+  "_target": "^2.1.0",
   "_originalSource": "Hover"
 }

@@ -8,8 +8,8 @@ $(document).ready(function() {
     /**
 	 * Responsive utility for determining if the current window is a desktop viewport.
      */
-	let desktopBreakpoint = 767;
-	let isDesktop = function() {
+	var desktopBreakpoint = 767;
+	var isDesktop = function() {
 		return $(window).width() > desktopBreakpoint;
 	};
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
      */
     $('.experience-tile').on('click touchstart', function() {
         // Grab the current id value, prepend a hash, and remove tile from the selector (to get the actual modal selector)
-        let target = "#" + $(this).attr('id').replace('-tile', "");
+        var target = "#" + $(this).attr('id').replace('-tile', "");
 
         // Modal initialization on the currently clicked modal
         $(target)
@@ -55,15 +55,15 @@ $(document).ready(function() {
      * JQuery Nodes
      * @type {*}
      */
-    let $navLink = $('.nav-link-container');
+    var $navLink = $('.nav-link-container');
 
     /**
      * Selectors and Classes
      * @type {string}
      */
-    let activeNavLinkClass = 'nav-active';
-    let fadeInBlockSelector = '.fade-in-block';
-    let navLinks = ['#top', '#about', '#work', '#connect'];
+    var activeNavLinkClass = 'nav-active';
+    var fadeInBlockSelector = '.fade-in-block';
+    var navLinks = ['#home', '#about', '#experience', '#contact'];
 
     /*
      ----------------------------------------
@@ -75,10 +75,10 @@ $(document).ready(function() {
      * Checks to see if the window hash is nothing or not one of our navLinks.
      * If it is not, we reset it to our 'home' section ('top').
      */
-    let resetHash = function() {
-        let hash = window.location.hash;
+    var resetHash = function() {
+        var hash = window.location.hash;
         if(hash === '' || navLinks.indexOf(hash) === -1) {
-            window.location.hash = 'top';
+            window.location.hash = 'home';
         }
     };
 
@@ -88,8 +88,8 @@ $(document).ready(function() {
      * @param nextIndex - If this function is called within the full page plugin, the nextIndex
      *                    is the section we are moving to, so use that instead of the hash.
      */
-    let updateMenu = function(nextIndex) {
-        let hash;
+    var updateMenu = function(nextIndex) {
+        var hash;
         // If a slide next index is provided, use that, otherwise, grab the hash
         if(nextIndex) {
             hash = navLinks[nextIndex-1];
@@ -106,10 +106,10 @@ $(document).ready(function() {
      *
      * @param hash - The hash of the menu section we are navigating to.
      */
-    let updateNavActiveItem = function(hash) {
+    var updateNavActiveItem = function(hash) {
         if(navLinks.indexOf(hash) >= 0) {
             $navLink.removeClass(activeNavLinkClass);
-            let linkQuery = "a[href='" + hash + "']";
+            var linkQuery = "a[href='" + hash + "']";
             $(linkQuery).parent().addClass(activeNavLinkClass);
         }
     };
@@ -119,10 +119,10 @@ $(document).ready(function() {
      *
      * @param hash - The hash of the menu section we are navigating to.
      */
-    let fadeInBlocks = function(hash) {
+    var fadeInBlocks = function(hash) {
         // Change our hash into a corresponding class and query for all blocks within the hash section
-        let $domNode = $(hash.replace("#", "."));
-        let $blocks = $domNode.find(fadeInBlockSelector);
+        var $domNode = $(hash.replace("#", "."));
+        var $blocks = $domNode.find(fadeInBlockSelector);
 
         // Only attempt to animate the blocks if they have an opacity of 0 (coming into view for the first time)
         if($blocks.length > 0 && $($blocks[0]).css("opacity") === "0") {
@@ -135,7 +135,7 @@ $(document).ready(function() {
     /**
      * Listener for a hash change, updates our menu.
      */
-    let hashListener = function() {
+    var hashListener = function() {
         $(window).on('hashchange', function() {
             updateMenu();
         });
@@ -147,19 +147,21 @@ $(document).ready(function() {
     (function() {
         resetHash();
         updateMenu();
-        hashListener();
+
+        // Comment in when not using the FullPage onLeave event
+        // hashListener();
     })();
 
     /**
      * Full Page Plugin Settings.
      */
 	$('#fullpage').fullpage({
-		anchors: ['top', 'about', 'work', 'connect'],
+		anchors: ['home', 'about', 'experience', 'contact'],
 		menu: '#menu',
 		fixedElements: '',
 		verticalCentered: false
         // Comment the following two lines out for auto scroll to be disabled
-		,autoScrolling: false,
+        ,autoScrolling: false,
         onLeave: function(index, nextIndex){
 			updateMenu(nextIndex);
         }
