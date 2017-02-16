@@ -5,19 +5,12 @@
   "authors": [
     "nickproz <nick.prozorovsky@gmail.com>"
   ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ],
   "dependencies": {
-    "jquery": "latest",
-    "jquery-ui": "latest",
-    "bootstrap": "latest",
-    "slick-carousel": "latest",
-    "Hover": "latest",
-    "fontawesome": "latest",
-    "fullpage": "latest",
-    "semantic-ui": "latest"
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "hover": "Hover#^2.1.0",
+    "semantic": "semantic-ui#^2.2.7",
+    "fullpage.js": "fullpage#^2.9.2",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }

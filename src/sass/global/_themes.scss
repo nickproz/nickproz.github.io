@@ -45,7 +45,8 @@
                 color: $background-color-active;
 
                 &:hover {
-                    color: darken($text-color, 30%);
+                    @include transition(0.75s);
+                    color: #195a80;
                 }
             }
         }

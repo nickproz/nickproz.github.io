@@ -5,10 +5,7 @@
 - Home button not animating
 - Experience tile design
 - Font style, font weights/uppercase
-- Footer link hover state (animation/transition?)
-- Contact icons bigger?
+- Extract colors and sizes into variables
 
 - Vodori/Ultimate website details
 - Figure out to host on github from non-default directory
-- Alternative to bower?
-- Clean up framework repos

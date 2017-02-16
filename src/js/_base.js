@@ -8,8 +8,8 @@ $(document).ready(function() {
     /**
 	 * Responsive utility for determining if the current window is a desktop viewport.
      */
-	let desktopBreakpoint = 767;
-	let isDesktop = function() {
+	var desktopBreakpoint = 767;
+	var isDesktop = function() {
 		return $(window).width() > desktopBreakpoint;
 	};
 

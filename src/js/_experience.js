@@ -10,7 +10,7 @@ $(document).ready(function() {
      */
     $('.experience-tile').on('click touchstart', function() {
         // Grab the current id value, prepend a hash, and remove tile from the selector (to get the actual modal selector)
-        let target = "#" + $(this).attr('id').replace('-tile', "");
+        var target = "#" + $(this).attr('id').replace('-tile', "");
 
         // Modal initialization on the currently clicked modal
         $(target)

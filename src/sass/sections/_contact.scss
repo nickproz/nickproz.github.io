@@ -3,7 +3,7 @@
 |               Contact Styling              |
 ----------------------------------------------
 */
-#contact {
+.contact {
     // Local Variables
     $size-font--icons:          40px;
     $size-margin--icons:        10px;
@@ -35,6 +35,7 @@
     	text-align: center;
     	bottom: 0;
     	position: absolute;
+        box-shadow: 0 -1px 2px 0 rgba(34,36,38,.15);
 
         .footer-link {
             font-size: $size-font--icons;

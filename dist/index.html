@@ -7,11 +7,10 @@
   <link rel="shortcut icon" href="./data/media/crest.ico" />
 
   <!-- Stylesheets -->
-  <!-- <link rel="stylesheet" href="./dependencies/bootstrap/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="./dependencies/Hover/css/hover-min.css">
-  <link rel="stylesheet" href="./dependencies/fontawesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./dependencies/fullpage/dist/jquery.fullpage.css">
-  <link rel="stylesheet" href="./dependencies/semantic-ui/dist/semantic.min.css">
+  <link rel="stylesheet" href="./dependencies/hover/css/hover-min.css">
+  <link rel="stylesheet" href="./dependencies/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./dependencies/fullpage.js/dist/jquery.fullpage.css">
+  <link rel="stylesheet" href="./dependencies/semantic/dist/semantic.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 
   <!-- Fonts -->
@@ -21,26 +20,25 @@
   <!-- Scripts -->
   <script src="./dependencies/jquery/dist/jquery.min.js"></script>
   <script src="./dependencies/jquery-ui/jquery-ui.min.js"></script>
-  <script src="./dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./dependencies/fullpage/dist/jquery.fullpage.min.js"></script>
-  <script src="./dependencies/fullpage/dist/jquery.fullpage.extensions.min.js"></script>
-  <script src="./dependencies/semantic-ui/dist/semantic.min.js"></script>
+  <script src="./dependencies/fullpage.js/dist/jquery.fullpage.min.js"></script>
+  <script src="./dependencies/fullpage.js/dist/jquery.fullpage.extensions.min.js"></script>
+  <script src="./dependencies/semantic/dist/semantic.min.js"></script>
   <script src="./js/script.js"></script>
 
 </head>
 <body class="blue-white-theme">
     <!-- NAVIGATION -->
     <ul class="navigation" id="menu">
-        <li data-menuanchor="top" class="nav-link-container"><a href="#top" class="nav-link">Home</a></li>
+        <li data-menuanchor="home" class="nav-link-container"><a href="#home" class="nav-link">Home</a></li>
         <li data-menuanchor="about" class="nav-link-container"><a href="#about" class="nav-link">About Me</a></li>
-        <li data-menuanchor="work" class="nav-link-container"><a href="#work" class="nav-link">Experience</a></li>
-        <li data-menuanchor="connect" class="nav-link-container"><a href="#connect" class="nav-link">Contact</a></li>
+        <li data-menuanchor="experience" class="nav-link-container"><a href="#experience" class="nav-link">Experience</a></li>
+        <li data-menuanchor="contact" class="nav-link-container"><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
 
     <div id="fullpage">
 		<!-- HOME -->
-        <div class="section" style="padding-top: 0">
-    		<div id="home" class="top">
+        <div class="section">
+    		<div class="home">
                 <div class="home-background-image"></div>
                 <div class="home-content">
                     <p class="home-text fade-in-block">Hi, I'm Nick.</p>
@@ -55,7 +53,7 @@
 
 		<!-- ABOUT ME -->
         <div class="section">
-    		<div id="about-me" class="about">
+    		<div class="about">
                 <div class="container-inner">
                     <div class="two column stackable ui grid about-me-grid">
                       <div class="column">
@@ -71,7 +69,7 @@
 
 		<!-- EXPERIENCE -->
         <div class="section">
-    		<div id="experience" class="work">
+    		<div class="experience">
                 <div class="container-inner">
                     <!-- EXPERIENCE TILES -->
                     <div class="experience-tile fade-in-block" id="experience-modal-tile-vodori">
@@ -269,7 +267,7 @@
 
 		<!-- CONTACT -->
         <div class="section">
-    		<div id="contact" class="connect">
+    		<div class="contact">
                 <div class="container-inner">
                     <div class="contact-container">
                         <div class="one column ui grid">

@@ -3,7 +3,7 @@
 |               Home Styling              |
 -------------------------------------------
 */
-#home {
+.home {
     // Local Variables
     $size-height--home-button:  100px;
     $size-width--home-button:   35px;
@@ -23,7 +23,7 @@
       background-image: url("../data/media/home.jpg");
       background-size: cover;
       background-position: center;
-    //   background-color: $color-blueElectric--navbar;
+      background-color: $color-blueElectric--navbar;
   	  background-blend-mode: multiply;
       background-attachment: fixed;
     }
