@@ -78,6 +78,12 @@ example (usage): @include vertical-center();
 |               Theme Mixins              |
 -------------------------------------------
 */
+.blue-white-theme a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #47a3da; }
+
 .blue-white-theme .home .home-background-image {
   background-color: #47a3da; }
 
@@ -104,6 +110,12 @@ example (usage): @include vertical-center();
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
+
+.blue-black-theme a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0cf; }
 
 .blue-black-theme .home .home-background-image {
   background-color: #0cf; }
@@ -132,6 +144,12 @@ example (usage): @include vertical-center();
       transition: all 0.75s;
       color: #195a80; }
 
+.red-white-theme a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #e55; }
+
 .red-white-theme .home .home-background-image {
   background-color: #e55; }
 
@@ -158,6 +176,12 @@ example (usage): @include vertical-center();
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
+
+.red-black-theme a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #e55; }
 
 .red-black-theme .home .home-background-image {
   background-color: #e55; }
@@ -200,10 +224,17 @@ html, body {
 
 body {
   visibility: hidden;
-  color: rgba(64, 64, 64, 0.9);
   background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
   background-color: rgba(71, 163, 218, 0.02);
   background-blend-mode: multiply; }
+
+a, body {
+  color: rgba(64, 64, 64, 0.9); }
+
+a {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .container-inner {
   text-align: center;

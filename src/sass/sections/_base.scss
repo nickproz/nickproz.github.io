@@ -14,10 +14,15 @@ html, body {
 }
 body {
     visibility: hidden;
-    color: rgba(64,64,64,.9);
     background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
     background-color: rgba(71, 163, 218, 0.02);
     background-blend-mode: multiply;
+}
+a, body {
+    color: rgba(64,64,64,.9);
+}
+a {
+    @include transition(0.5s);
 }
 .container-inner {
     text-align: center;
