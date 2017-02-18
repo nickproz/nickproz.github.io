@@ -24,7 +24,7 @@ body {
 
 .container-inner {
     text-align: center;
-    width: 75%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     font-size: 0;
@@ -32,6 +32,13 @@ body {
 
 .fade-in-block {
     opacity: 0;
+}
+
+// Tablet portrait styling (>480)
+@media #{($break-mobile)} {
+    .container-inner {
+        width: 75%;
+    }
 }
 
 // Modal styling

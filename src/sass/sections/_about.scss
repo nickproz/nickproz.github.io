@@ -24,6 +24,9 @@
         @include vertical-center();
         font-size: $size-font--description;
     }
+    .image {
+        text-align: center;
+    }
 
     // Tablet portrait styling (>480)
     @media #{($break-mobile)} {
