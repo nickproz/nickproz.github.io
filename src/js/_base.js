@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// Fade body content in after page has loaded
 	$('body').css('visibility','visible').hide().fadeIn('fast');
 
-	if(window.innerHeight > window.innerWidth) {
+	if(window.innerHeight < window.innerWidth) {
 		$('.section').addClass('fp-auto-height');
 	}
 
@@ -24,6 +24,4 @@ $(document).ready(function() {
         // Announce the new orientation number
         alert(window.orientation);
     }, false);
-
-	alert('hello!');
 });
