@@ -9,7 +9,7 @@
     $color-gray--experience-text: #656565;
     $size-font--experience-text: 12px;
     $size-padding--experience-tile: 10px;
-    $size-height--experience-image-container: 130px;
+    $size-height--experience-image-container: 100px;
 
     // Styling
     @include vertical-center();
@@ -91,7 +91,18 @@
         -webkit-backface-visibility: hidden;
     }
 
-    // Tablet portrait styling (>767)
+    // Tablet portrait styling (>480)
+    @media #{($break-mobile)} {
+        .experience-image-container {
+            height: 135px;
+        }
+        .experience-text {
+            // Comment this out if you don't want names underneath the tiles
+            display: block;
+        }
+    }
+
+    // Tablet landscape styling (>767)
     @media #{($break-tablet-portrait)} {
         .experience-tile {
             width: 33%;
@@ -102,14 +113,9 @@
         .experience-text-overlay {
             font-size: 14px;
         }
-        .experience-text {
-
-            // Comment this out if you don't want names underneath the tiles
-            display: block;
-        }
     }
 
-    // Tablet landscape styling (>1024)
+    // Desktop styling (>1024)
     @media #{($break-tablet-landscape)} {
         .experience-tile {
             width: 25%;

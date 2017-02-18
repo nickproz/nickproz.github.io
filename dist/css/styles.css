@@ -347,14 +347,23 @@ body {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    width: 200px !important; }
   .about .about-me-description {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 16px; }
+    font-size: 14px; }
+  @media only screen and (min-width: 480px) {
+    .about .about-me-image {
+      width: 250px !important; }
+    .about .about-me-description {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    .about .about-me-image {
+      width: 300px !important; } }
 
 /*
 -------------------------------------------------
@@ -384,7 +393,7 @@ body {
       -webkit-filter: brightness(45%); }
   .experience .experience-image-container {
     box-shadow: 2px 2px 2px #888888;
-    height: 130px;
+    height: 100px;
     overflow: hidden;
     position: relative; }
   .experience .experience-image {
@@ -431,15 +440,18 @@ body {
     opacity: 0;
     width: 80%;
     -webkit-backface-visibility: hidden; }
+  @media only screen and (min-width: 480px) {
+    .experience .experience-image-container {
+      height: 135px; }
+    .experience .experience-text {
+      display: block; } }
   @media only screen and (min-width: 768px) {
     .experience .experience-tile {
       width: 33%; }
     .experience .experience-image-container {
       height: 170px; }
     .experience .experience-text-overlay {
-      font-size: 14px; }
-    .experience .experience-text {
-      display: block; } }
+      font-size: 14px; } }
   @media only screen and (min-width: 1024px) {
     .experience .experience-tile {
       width: 25%; }
@@ -457,8 +469,8 @@ body {
   height: 100%; }
   .contact .contact-image {
     margin: 0 auto;
-    height: 200px;
-    width: 150px; }
+    height: auto;
+    width: 100px; }
   .contact .contact-container {
     position: relative;
     top: 50%;
@@ -471,6 +483,8 @@ body {
     display: block;
     margin-bottom: 10px;
     font-size: 30px; }
+  .contact .five.column {
+    margin-top: 0 !important; }
   .contact .footer {
     width: 100%;
     height: 50px;
@@ -490,3 +504,7 @@ body {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
+  @media only screen and (min-width: 480px) {
+    .contact .contact-image {
+      height: 200px;
+      width: 150px; } }

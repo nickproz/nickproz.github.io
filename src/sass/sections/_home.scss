@@ -47,7 +47,7 @@
         @include vertical-center-2();
     }
 
-    // Tablet portrait styling (>767)
+    // Tablet landscape styling (>767)
     @media #{($break-tablet-portrait)} {
         .home-text {
             font-size: 5rem;

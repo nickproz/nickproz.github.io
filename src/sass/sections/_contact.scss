@@ -13,8 +13,8 @@
 
     .contact-image {
         margin: 0 auto;
-        height: 200px;
-        width: 150px;
+        height: auto;
+        width: 100px;
     }
     .contact-container {
         @include vertical-center();
@@ -26,6 +26,9 @@
         display: block;
         margin-bottom: 10px;
         font-size: 30px;
+    }
+    .five.column {
+        margin-top: 0 !important;
     }
 
     // Footer styling
@@ -44,6 +47,14 @@
         }
         .footer-links {
             @include vertical-center();
+        }
+    }
+
+    // Tablet portrait styling (>480)
+    @media #{($break-mobile)} {
+        .contact-image {
+            height: 200px;
+            width: 150px;
         }
     }
 }

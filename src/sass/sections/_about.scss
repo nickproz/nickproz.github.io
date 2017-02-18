@@ -5,7 +5,7 @@
 */
 .about {
     // Local Variables
-    $size-font--description: 16px;
+    $size-font--description: 14px;
 
     // Styles
     height: 100%;
@@ -16,9 +16,31 @@
     .about-me-image {
         margin: 0 auto;
         @include vertical-center();
+
+        // Important needed to override semantic styling
+        width: 200px !important;
     }
     .about-me-description {
         @include vertical-center();
         font-size: $size-font--description;
+    }
+
+    // Tablet portrait styling (>480)
+    @media #{($break-mobile)} {
+        .about-me-image {
+            // Important needed to override semantic styling
+            width: 250px !important;
+        }
+        .about-me-description {
+            font-size: 16px;
+        }
+    }
+
+    // Tablet landscape styling (>767)
+    @media #{($break-tablet-portrait)} {
+        .about-me-image {
+            // Important needed to override semantic styling
+            width: 300px !important;
+        }
     }
 }
