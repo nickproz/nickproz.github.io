@@ -14,7 +14,7 @@ html, body {
 }
 body {
     visibility: hidden;
-    color: rgba(0,0,0,.8);
+    color: rgba(64,64,64,.9);
     background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
     background-color: rgba(71, 163, 218, 0.02);
     background-blend-mode: multiply;
@@ -65,6 +65,7 @@ body {
     .experience-modal-description {
         font-size: 11px;
         margin-top: 15px;
+        text-align: left;
     }
     .experience-modal-image {
         height: 120px;

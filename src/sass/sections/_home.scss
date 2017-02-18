@@ -10,28 +10,29 @@
     $size-font--home-button:    4rem;
 
     // Styling
-    @include transform(translateZ(0));
     height: 100%;
     overflow: hidden;
 
     .home-background-image {
         height: 100%;
-        position: fixed;
-        left: 0;
-        right: 0;
         background-image: url("../data/images/home.jpg");
         background-size: cover;
-        background-position: 30%;
-        background-color: $color-blueElectric--navbar;
+        //background-position: 30%;
+        background-position: center;
+        //background-color: $color-blueElectric--navbar;
+        background-attachment: scroll;
         background-blend-mode: multiply;
-        background-attachment: fixed;
     }
     .home-content {
         @include vertical-center();
+        position: absolute;
+        left: 0;
+        right: 0;
     }
     .home-text {
         color: white;
         font-size: $size-font--home-button;
+        margin-bottom: 1rem;
     }
     .home-button {
         width: $size-height--home-button;
@@ -45,6 +46,13 @@
         color: white;
         text-decoration: none;
         @include vertical-center-2();
+    }
+
+    // Tablet portrait styling (>480)
+    @media #{($break-tablet-portrait)} {
+        .home-background-image {
+            background-attachment: fixed;
+        }
     }
 
     // Tablet landscape styling (>767)

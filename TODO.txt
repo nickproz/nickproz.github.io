@@ -1,7 +1,9 @@
 - Vodori/Ultimate website details
-- Font style, font weights/uppercase
 
+- Font sizes to rem
+- Google analytics
 - Experience tile design
-- Extract colors and sizes into variables
+- Extract colors and sizes into variables (clean up code)
 - Theme colors
+- iPad landscape responsiveness
 - Figure out to host on github from non-default directory

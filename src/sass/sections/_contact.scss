@@ -40,7 +40,7 @@
         bottom: 0;
         position: absolute;
         box-shadow: 0 -1px 2px 0 rgba(34,36,38,.15);
-        @include transition(1s);
+        @include transition(0.5s);
 
         .footer-link {
             font-size: $size-font--icons;

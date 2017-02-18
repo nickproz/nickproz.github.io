@@ -21,7 +21,7 @@
         line-height: $size-height--navbar;
         text-align: center;
         height: 100%;
-        @include transition(0.75s);
+        @include transition(0.5s);
         flex-grow: 1;
         overflow-x: hidden;
         overflow-y: hidden;

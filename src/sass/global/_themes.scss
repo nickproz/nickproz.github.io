@@ -67,7 +67,3 @@
 .red-black-theme {
     @include theme-navigation($color-grayDark--navbar, $color-redLight--navbar, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));
 }
-// @include theme-navigation($color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));
-// @include theme-navigation($color-grayDark--navbar, $color-blueElectric--navbar, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));
-// @include theme-navigation($color-grayDark--navbar, #e55, white, $color-grayDark--navbar, lighten($color-grayDark--navbar, 5%));
-// @include theme-navigation($color-grayLight--navbar, #e55, #e55, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));

@@ -200,7 +200,7 @@ html, body {
 
 body {
   visibility: hidden;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(64, 64, 64, 0.9);
   background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
   background-color: rgba(71, 163, 218, 0.02);
   background-blend-mode: multiply; }
@@ -241,7 +241,8 @@ body {
     margin: 10px; }
   .modal .experience-modal-description {
     font-size: 11px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    text-align: left; }
   .modal .experience-modal-image {
     height: 120px;
     width: 120px; }
@@ -270,9 +271,9 @@ body {
     line-height: 50px;
     text-align: center;
     height: 100%;
-    -moz-transition: all 0.75s;
-    -webkit-transition: all 0.75s;
-    transition: all 0.75s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     flex-grow: 1;
     overflow-x: hidden;
     overflow-y: hidden; }
@@ -291,31 +292,28 @@ body {
 -------------------------------------------
 */
 .home {
-  -moz-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   height: 100%;
   overflow: hidden; }
   .home .home-background-image {
     height: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
     background-image: url("../data/images/home.jpg");
     background-size: cover;
-    background-position: 30%;
-    background-color: #0cf;
-    background-blend-mode: multiply;
-    background-attachment: fixed; }
+    background-position: center;
+    background-attachment: scroll;
+    background-blend-mode: multiply; }
   .home .home-content {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    position: absolute;
+    left: 0;
+    right: 0; }
   .home .home-text {
     color: white;
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-bottom: 1rem; }
   .home .home-button {
     width: 100px;
     height: 35px;
@@ -330,6 +328,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 768px) {
+    .home .home-background-image {
+      background-attachment: fixed; } }
   @media only screen and (min-width: 768px) {
     .home .home-text {
       font-size: 5rem;
@@ -390,23 +391,22 @@ body {
     width: 50%;
     cursor: pointer; }
     .experience .experience-tile:hover .experience-text {
-      color: #323232;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.35); }
     .experience .experience-tile:hover .experience-text-overlay {
       opacity: 1;
       display: none; }
     .experience .experience-tile:hover .experience-image {
-      transform: scale(1.1);
-      -webkit-filter: brightness(45%); }
+      transform: scale(1.075);
+      -webkit-filter: brightness(65%); }
   .experience .experience-image-container {
     box-shadow: 2px 2px 2px #888888;
     height: 100px;
     overflow: hidden;
     position: relative; }
   .experience .experience-image {
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -426,22 +426,21 @@ body {
     .experience .experience-image.ultimate-website {
       background-image: url("../data/images/tiles/ultimate-website.jpg"); }
   .experience .experience-text {
-    color: #656565;
     font-size: 12px;
     margin: 0;
     padding-top: 3px;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     display: none; }
   .experience .experience-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     font-size: 12px;
     color: white;
     opacity: 0;
@@ -499,9 +498,9 @@ body {
     bottom: 0;
     position: absolute;
     box-shadow: 0 -1px 2px 0 rgba(34, 36, 38, 0.15);
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s; }
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .contact .footer .footer-link {
       font-size: 40px;
       margin: 0 10px; }
