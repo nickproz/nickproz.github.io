@@ -341,13 +341,11 @@ body {
 --------------------------------------------
 */
 .about {
-  height: 100%; }
-  .about .about-me-grid {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
   .about .about-me-image {
     margin: 0 auto;
     position: relative;
@@ -483,7 +481,7 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   .contact .contact-icon-container {
-    font-size: 12px; }
+    font-size: 10px; }
   .contact .contact-icon {
     display: block;
     margin-bottom: 10px;
@@ -512,4 +510,6 @@ body {
   @media only screen and (min-width: 480px) {
     .contact .contact-image {
       height: 200px;
-      width: 150px; } }
+      width: 150px; }
+    .contact .contact-icon-container {
+      font-size: 12px; } }
