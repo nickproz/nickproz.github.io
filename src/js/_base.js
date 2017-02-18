@@ -25,4 +25,5 @@ $(document).ready(function() {
         alert(window.orientation);
     }, false);
 
+	alert('hello!');
 });
