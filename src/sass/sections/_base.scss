@@ -27,16 +27,20 @@ a {
 .container-inner {
     text-align: center;
     width: 85%;
-    //height: 100%;
     margin: 0 auto;
     font-size: 0;
-    @include vertical-center();
+    //@include vertical-center();
 }
 .fade-in-block {
     opacity: 0;
 }
 .image {
     text-align: center;
+}
+.about, .experience, .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // Tablet portrait styling (>480)
