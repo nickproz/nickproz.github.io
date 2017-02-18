@@ -20,7 +20,7 @@
         //background-position: 30%;
         background-position: center;
         //background-color: $color-blueElectric--navbar;
-        background-attachment: scroll;
+        //background-attachment: scroll;
         background-blend-mode: multiply;
     }
     .home-content {
@@ -49,7 +49,7 @@
     }
 
     // Tablet portrait styling (>480)
-    @media #{($break-tablet-portrait)} {
+    @media #{($break-mobile)} {
         .home-background-image {
             background-attachment: fixed;
         }
