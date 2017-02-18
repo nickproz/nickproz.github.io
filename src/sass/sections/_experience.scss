@@ -10,7 +10,7 @@
     $size-height--experience-image-container: 100px;
 
     // Styling
-    @include vertical-center();
+    height: 100%;
 
     .experience-tile {
         display: inline-block;
