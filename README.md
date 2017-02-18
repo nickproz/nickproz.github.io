@@ -25,5 +25,5 @@ And then navigate to 'nickproz.github.io/nickproz.github.io_v2' (replace anythin
 
 # Dependencies
 
-After running bower install, Jquery and Angular will be installed.
-Optional dependencies installed include: Bootstrap, hover, font awesome, slick, and full page.
+After running bower install, Jquery and semantic will be installed.
+Optional dependencies installed include: Hover, font awesome, and full page.
