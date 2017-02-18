@@ -9,11 +9,9 @@
         padding-top: $size-height--navbar;
     }
 }
-
 html, body {
     font-family: $font-family--site;
 }
-
 body {
     visibility: hidden;
     color: rgba(0,0,0,.8);
@@ -21,17 +19,18 @@ body {
     background-color: rgba(71, 163, 218, 0.02);
     background-blend-mode: multiply;
 }
-
 .container-inner {
     text-align: center;
-    width: 90%;
+    width: 85%;
     height: 100%;
     margin: 0 auto;
     font-size: 0;
 }
-
 .fade-in-block {
     opacity: 0;
+}
+.image {
+    text-align: center;
 }
 
 // Tablet portrait styling (>480)
