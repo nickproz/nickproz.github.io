@@ -29,7 +29,7 @@ a {
     width: 85%;
     margin: 0 auto;
     font-size: 0;
-    //@include vertical-center();
+    @include vertical-center();
 }
 .fade-in-block {
     opacity: 0;
@@ -37,11 +37,11 @@ a {
 .image {
     text-align: center;
 }
-.about, .experience, .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+//.about, .experience, .contact {
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//}
 
 // Tablet portrait styling (>480)
 @media #{($break-mobile)} {
