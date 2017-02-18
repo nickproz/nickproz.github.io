@@ -207,13 +207,16 @@ body {
 
 .container-inner {
   text-align: center;
-  width: 90%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
   font-size: 0; }
 
 .fade-in-block {
   opacity: 0; }
+
+.image {
+  text-align: center; }
 
 @media only screen and (min-width: 480px) {
   .container-inner {
@@ -360,8 +363,6 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 14px; }
-  .about .image {
-    text-align: center; }
   @media only screen and (min-width: 480px) {
     .about .about-me-image {
       width: 250px !important; }
