@@ -322,15 +322,7 @@ body {
     margin: 0 auto;
     border: 1px solid white;
     cursor: pointer;
-    position: relative;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    .home .home-button:hover {
-      -moz-transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
-      width: 110px; }
+    position: relative; }
   .home .home-button-link {
     color: white;
     text-decoration: none;
