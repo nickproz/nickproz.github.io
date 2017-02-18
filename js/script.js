@@ -5,9 +5,9 @@
 */
 $(document).ready(function() {
 
-    /**
+	/**
 	 * Responsive utility for determining if the current window is a desktop viewport.
-     */
+	 */
 	var desktopBreakpoint = 767;
 	var isDesktop = function() {
 		return $(window).width() > desktopBreakpoint;
@@ -33,9 +33,9 @@ $(document).ready(function() {
 
         // Modal initialization on the currently clicked modal
         $(target)
-        // .modal('setting', 'transition', 'horizontal flip')
-        .modal({blurring: true})
-        .modal('show');
+            // .modal('setting', 'transition', 'horizontal flip')
+            .modal({blurring: true})
+            .modal('show');
     })
 });
 
@@ -155,15 +155,15 @@ $(document).ready(function() {
     /**
      * Full Page Plugin Settings.
      */
-	$('#fullpage').fullpage({
-		anchors: ['home', 'about', 'experience', 'contact'],
-		menu: '#menu',
-		fixedElements: '',
-		verticalCentered: false
+    $('#fullpage').fullpage({
+        anchors: ['home', 'about', 'experience', 'contact'],
+        menu: '#menu',
+        fixedElements: '',
+        verticalCentered: false
         // Comment the following two lines out for auto scroll to be disabled
         ,autoScrolling: false,
         onLeave: function(index, nextIndex){
-			updateMenu(nextIndex);
+            updateMenu(nextIndex);
         }
-	});
+    });
 });

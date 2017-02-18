@@ -78,7 +78,7 @@ example (usage): @include vertical-center();
 |               Theme Mixins              |
 -------------------------------------------
 */
-.blue-white-theme #home .home-background-image {
+.blue-white-theme .home .home-background-image {
   background-color: #47a3da; }
 
 .blue-white-theme .navigation {
@@ -92,20 +92,20 @@ example (usage): @include vertical-center();
   .blue-white-theme .navigation .nav-link {
     color: #47a3da; }
 
-.blue-white-theme #contact .contact-icon {
+.blue-white-theme .contact .contact-icon {
   color: #47a3da; }
 
-.blue-white-theme #contact .footer {
+.blue-white-theme .contact .footer {
   background-color: white; }
-  .blue-white-theme #contact .footer .footer-link {
+  .blue-white-theme .contact .footer .footer-link {
     color: #47a3da; }
-    .blue-white-theme #contact .footer .footer-link:hover {
+    .blue-white-theme .contact .footer .footer-link:hover {
       -moz-transition: all 0.75s;
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
 
-.blue-black-theme #home .home-background-image {
+.blue-black-theme .home .home-background-image {
   background-color: #0cf; }
 
 .blue-black-theme .navigation {
@@ -119,20 +119,20 @@ example (usage): @include vertical-center();
   .blue-black-theme .navigation .nav-link {
     color: white; }
 
-.blue-black-theme #contact .contact-icon {
+.blue-black-theme .contact .contact-icon {
   color: #0cf; }
 
-.blue-black-theme #contact .footer {
+.blue-black-theme .contact .footer {
   background-color: #404040; }
-  .blue-black-theme #contact .footer .footer-link {
+  .blue-black-theme .contact .footer .footer-link {
     color: #0cf; }
-    .blue-black-theme #contact .footer .footer-link:hover {
+    .blue-black-theme .contact .footer .footer-link:hover {
       -moz-transition: all 0.75s;
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
 
-.red-white-theme #home .home-background-image {
+.red-white-theme .home .home-background-image {
   background-color: #e55; }
 
 .red-white-theme .navigation {
@@ -146,20 +146,20 @@ example (usage): @include vertical-center();
   .red-white-theme .navigation .nav-link {
     color: #e55; }
 
-.red-white-theme #contact .contact-icon {
+.red-white-theme .contact .contact-icon {
   color: #e55; }
 
-.red-white-theme #contact .footer {
+.red-white-theme .contact .footer {
   background-color: white; }
-  .red-white-theme #contact .footer .footer-link {
+  .red-white-theme .contact .footer .footer-link {
     color: #e55; }
-    .red-white-theme #contact .footer .footer-link:hover {
+    .red-white-theme .contact .footer .footer-link:hover {
       -moz-transition: all 0.75s;
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
 
-.red-black-theme #home .home-background-image {
+.red-black-theme .home .home-background-image {
   background-color: #e55; }
 
 .red-black-theme .navigation {
@@ -173,14 +173,14 @@ example (usage): @include vertical-center();
   .red-black-theme .navigation .nav-link {
     color: white; }
 
-.red-black-theme #contact .contact-icon {
+.red-black-theme .contact .contact-icon {
   color: #e55; }
 
-.red-black-theme #contact .footer {
+.red-black-theme .contact .footer {
   background-color: #404040; }
-  .red-black-theme #contact .footer .footer-link {
+  .red-black-theme .contact .footer .footer-link {
     color: #e55; }
-    .red-black-theme #contact .footer .footer-link:hover {
+    .red-black-theme .contact .footer .footer-link:hover {
       -moz-transition: all 0.75s;
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
@@ -196,11 +196,14 @@ example (usage): @include vertical-center();
   padding-top: 50px; }
 
 html, body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 body {
   visibility: hidden;
-  background-color: #fefdf0; }
+  color: rgba(0, 0, 0, 0.8);
+  background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
+  background-color: rgba(71, 163, 218, 0.02);
+  background-blend-mode: multiply; }
 
 .container-inner {
   text-align: center;
@@ -263,7 +266,9 @@ body {
     -moz-transition: all 0.75s;
     -webkit-transition: all 0.75s;
     transition: all 0.75s;
-    flex-grow: 1; }
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: hidden; }
   .navigation .nav-link {
     text-decoration: none;
     display: inline-block;
@@ -285,16 +290,13 @@ body {
   height: 100%;
   overflow: hidden; }
   .home .home-background-image {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
     height: 100%;
     position: fixed;
     left: 0;
     right: 0;
-    background-image: url("../data/media/home.jpg");
+    background-image: url("../data/images/home.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 30%;
     background-color: #0cf;
     background-blend-mode: multiply;
     background-attachment: fixed; }
@@ -312,18 +314,15 @@ body {
     height: 35px;
     margin: 0 auto;
     border: 1px solid white;
-    cursor: pointer; }
-    .home .home-button.hover {
-      background-color: white; }
-  .home .home-button-text {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    cursor: pointer;
+    position: relative; }
   .home .home-button-link {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   @media only screen and (min-width: 768px) {
     .home .home-text {
       font-size: 5rem;
@@ -378,12 +377,13 @@ body {
       color: #323232;
       text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
     .experience .experience-tile:hover .experience-text-overlay {
-      opacity: 1; }
+      opacity: 1;
+      display: none; }
     .experience .experience-tile:hover .experience-image {
       transform: scale(1.1);
       -webkit-filter: brightness(45%); }
   .experience .experience-image-container {
-    box-shadow: 1px 1px 1px #888888;
+    box-shadow: 2px 2px 2px #888888;
     height: 130px;
     overflow: hidden;
     position: relative; }
@@ -396,22 +396,22 @@ body {
     background-position: center;
     height: 100%; }
     .experience .experience-image.vodori {
-      background-image: url("../data/media/vodori.jpg"); }
+      background-image: url("../data/images/tiles/vodori.jpg"); }
     .experience .experience-image.argonne {
-      background-image: url("../data/media/argonne.jpg"); }
+      background-image: url("../data/images/tiles/argonne.jpg"); }
     .experience .experience-image.illinois {
-      background-image: url("../data/media/illinois.JPG"); }
+      background-image: url("../data/images/tiles/illinois.JPG"); }
     .experience .experience-image.illini-media {
-      background-image: url("../data/media/illini-media.jpg"); }
+      background-image: url("../data/images/tiles/illini-media.jpg"); }
     .experience .experience-image.housing {
-      background-image: url("../data/media/housing.jpg"); }
+      background-image: url("../data/images/tiles/housing.jpg"); }
     .experience .experience-image.ultimate {
-      background-image: url("../data/media/ultimate.jpg"); }
+      background-image: url("../data/images/tiles/ultimate.jpg"); }
     .experience .experience-image.ultimate-website {
-      background-image: url("../data/media/ultimate-website.jpg"); }
+      background-image: url("../data/images/tiles/ultimate-website.jpg"); }
   .experience .experience-text {
     color: #656565;
-    font-size: 11px;
+    font-size: 12px;
     margin: 0;
     padding-top: 3px;
     -moz-transition: all 0.3s;
@@ -426,7 +426,7 @@ body {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    font-size: 11px;
+    font-size: 12px;
     color: white;
     opacity: 0;
     width: 80%;
@@ -439,14 +439,14 @@ body {
     .experience .experience-text-overlay {
       font-size: 14px; }
     .experience .experience-text {
-      display: none; } }
+      display: block; } }
   @media only screen and (min-width: 1024px) {
     .experience .experience-tile {
       width: 25%; }
     .experience .experience-image-container {
       height: 200px; }
     .experience .experience-text-overlay {
-      font-size: 16px; } }
+      font-size: 1rem; } }
 
 /*
 ----------------------------------------------
@@ -477,7 +477,10 @@ body {
     text-align: center;
     bottom: 0;
     position: absolute;
-    box-shadow: 0 -1px 2px 0 rgba(34, 36, 38, 0.15); }
+    box-shadow: 0 -1px 2px 0 rgba(34, 36, 38, 0.15);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .contact .footer .footer-link {
       font-size: 40px;
       margin: 0 10px; }
