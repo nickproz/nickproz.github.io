@@ -114,15 +114,15 @@ $(document).ready(function() {
     /**
      * Full Page Plugin Settings.
      */
-	$('#fullpage').fullpage({
-		anchors: ['home', 'about', 'experience', 'contact'],
-		menu: '#menu',
-		fixedElements: '',
-		verticalCentered: false
+    $('#fullpage').fullpage({
+        anchors: ['home', 'about', 'experience', 'contact'],
+        menu: '#menu',
+        fixedElements: '',
+        verticalCentered: false
         // Comment the following two lines out for auto scroll to be disabled
         ,autoScrolling: false,
         onLeave: function(index, nextIndex){
-			updateMenu(nextIndex);
+            updateMenu(nextIndex);
         }
-	});
+    });
 });

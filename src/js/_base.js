@@ -5,9 +5,9 @@
 */
 $(document).ready(function() {
 
-    /**
+	/**
 	 * Responsive utility for determining if the current window is a desktop viewport.
-     */
+	 */
 	var desktopBreakpoint = 767;
 	var isDesktop = function() {
 		return $(window).width() > desktopBreakpoint;

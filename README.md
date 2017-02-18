@@ -21,6 +21,7 @@ Use the following commands to deploy to github pages:
 git push origin --delete gh-pages
 git subtree push --prefix dist origin gh-pages
 ```
+And then navigate to 'nickproz.github.io/nickproz.github.io_v2' (replace anything after the slash with the repo name).
 
 # Dependencies
 

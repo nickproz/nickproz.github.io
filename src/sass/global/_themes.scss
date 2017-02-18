@@ -4,9 +4,12 @@
 -------------------------------------------
 */
 @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active, $hover-color) {
-    #home {
+    .home {
         .home-background-image {
             background-color: $background-color-active;
+        }
+        .home-button:hover {
+            //background-color: rgba(71, 163, 218, 0.15);
         }
     }
     .navigation {
@@ -32,7 +35,7 @@
             color: $text-color;
         }
     }
-    #contact {
+    .contact {
         // Contact icons (i)
         .contact-icon {
             color: $background-color-active;

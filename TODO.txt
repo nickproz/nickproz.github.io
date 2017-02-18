@@ -1,11 +1,7 @@
-- Theme colors
-- Background color
-- Resume button (hover state, correct link to PDF)
-
-- Home button not animating
-- Experience tile design
-- Font style, font weights/uppercase
-- Extract colors and sizes into variables
-
 - Vodori/Ultimate website details
+- Font style, font weights/uppercase
+
+- Experience tile design
+- Extract colors and sizes into variables
+- Theme colors
 - Figure out to host on github from non-default directory

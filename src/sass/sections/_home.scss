@@ -15,17 +15,16 @@
     overflow: hidden;
 
     .home-background-image {
-      @include transform(scale(1.1));
-      height: 100%;
-      position: fixed;
-      left: 0;
-      right: 0;
-      background-image: url("../data/media/home.jpg");
-      background-size: cover;
-      background-position: center;
-      background-color: $color-blueElectric--navbar;
-  	  background-blend-mode: multiply;
-      background-attachment: fixed;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-image: url("../data/images/home.jpg");
+        background-size: cover;
+        background-position: 30%;
+        background-color: $color-blueElectric--navbar;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
     }
     .home-content {
         @include vertical-center();
@@ -40,17 +39,12 @@
         margin: 0 auto;
         border: 1px solid white;
         cursor: pointer;
-
-        &.hover {
-            background-color:white;
-        }
-    }
-    .home-button-text {
-        @include vertical-center();
+        position: relative;
     }
     .home-button-link {
         color: white;
         text-decoration: none;
+        @include vertical-center-2();
     }
 
     // Tablet portrait styling (>767)

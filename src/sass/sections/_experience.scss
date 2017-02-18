@@ -7,7 +7,7 @@
     // Local Variables
     $color-gray--experience-hover-text: #323232;
     $color-gray--experience-text: #656565;
-    $size-font--experience-text: 11px;
+    $size-font--experience-text: 12px;
     $size-padding--experience-tile: 10px;
     $size-height--experience-image-container: 130px;
 
@@ -28,6 +28,9 @@
             }
             .experience-text-overlay {
                 opacity: 1;
+
+                // Comment this out if you want hover text on the tiles
+                display: none;
             }
             .experience-image {
                 transform: scale(1.1);
@@ -36,7 +39,7 @@
         }
     }
     .experience-image-container {
-        box-shadow: 1px 1px 1px #888888;
+        box-shadow: 2px 2px 2px #888888;
         height: $size-height--experience-image-container;
         overflow: hidden;
         position: relative;
@@ -49,25 +52,25 @@
         height: 100%;
 
         &.vodori {
-            background-image: url('../data/media/vodori.jpg');
+            background-image: url('../data/images/tiles/vodori.jpg');
         }
         &.argonne {
-            background-image: url('../data/media/argonne.jpg');
+            background-image: url('../data/images/tiles/argonne.jpg');
         }
         &.illinois {
-            background-image: url('../data/media/illinois.JPG');
+            background-image: url('../data/images/tiles/illinois.JPG');
         }
         &.illini-media {
-            background-image: url('../data/media/illini-media.jpg');
+            background-image: url('../data/images/tiles/illini-media.jpg');
         }
         &.housing {
-            background-image: url('../data/media/housing.jpg');
+            background-image: url('../data/images/tiles/housing.jpg');
         }
         &.ultimate {
-            background-image: url('../data/media/ultimate.jpg');
+            background-image: url('../data/images/tiles/ultimate.jpg');
         }
         &.ultimate-website {
-            background-image: url('../data/media/ultimate-website.jpg');
+            background-image: url('../data/images/tiles/ultimate-website.jpg');
         }
     }
     .experience-text {
@@ -100,7 +103,9 @@
             font-size: 14px;
         }
         .experience-text {
-            display: none;
+
+            // Comment this out if you don't want names underneath the tiles
+            display: block;
         }
     }
 
@@ -113,7 +118,7 @@
             height: 200px;
         }
         .experience-text-overlay {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 }

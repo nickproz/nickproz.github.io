@@ -16,7 +16,10 @@ html, body {
 
 body {
     visibility: hidden;
-    background-color: #fefdf0;
+    color: rgba(0,0,0,.8);
+    background-image: url("../data/images/backgrounds/background-geometric-6.jpg");
+    background-color: rgba(71, 163, 218, 0.02);
+    background-blend-mode: multiply;
 }
 
 .container-inner {

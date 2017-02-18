@@ -30,16 +30,17 @@
 
     // Footer styling
     .footer {
-    	width: 100%;
-    	height: $size-height--navbar;
-    	text-align: center;
-    	bottom: 0;
-    	position: absolute;
+        width: 100%;
+        height: $size-height--navbar;
+        text-align: center;
+        bottom: 0;
+        position: absolute;
         box-shadow: 0 -1px 2px 0 rgba(34,36,38,.15);
+        @include transition(1s);
 
         .footer-link {
             font-size: $size-font--icons;
-        	margin: 0 $size-margin--icons;
+            margin: 0 $size-margin--icons;
         }
         .footer-links {
             @include vertical-center();
