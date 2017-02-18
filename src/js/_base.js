@@ -23,5 +23,6 @@ $(document).ready(function() {
     window.addEventListener("orientationchange", function() {
         // Announce the new orientation number
         $('.section').addClass('fp-auto-height');
+        $('.section').height(window.innerHeight - 50);
     }, false);
 });
