@@ -8,11 +8,8 @@
     $size-font--description: 14px;
 
     // Styles
-    height: 100%;
+    @include vertical-center();
 
-    .about-me-grid {
-        @include vertical-center();
-    }
     .about-me-image {
         margin: 0 auto;
         @include vertical-center();

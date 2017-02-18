@@ -20,7 +20,7 @@
         @include vertical-center();
     }
     .contact-icon-container {
-        font-size: 12px;
+        font-size: 10px;
     }
     .contact-icon {
         display: block;
@@ -56,6 +56,9 @@
         .contact-image {
             height: 200px;
             width: 150px;
+        }
+        .contact-icon-container {
+            font-size: 12px;
         }
     }
 }

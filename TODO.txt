@@ -1,5 +1,6 @@
 - Vodori/Ultimate website details
 
+- Contact icons link to call/email
 - Font sizes to rem
 - Google analytics
 - Experience tile design
