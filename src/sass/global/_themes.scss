@@ -4,10 +4,6 @@
 -------------------------------------------
 */
 @mixin theme-navigation($background-color, $background-color-active, $text-color, $text-color-active, $hover-color) {
-    a:hover {
-        @include transition(0.5s);
-        color: $background-color-active;
-    }
     .home {
         .home-background-image {
             background-color: $background-color-active;
@@ -41,6 +37,12 @@
     }
     .contact {
         // Contact icons (i)
+        .contact-icon-container {
+            a:hover {
+                @include transition(0.5s);
+                color: $background-color-active;
+            }
+        }
         .contact-icon {
             color: $background-color-active;
         }

@@ -1,9 +1,8 @@
-- Vodori/Ultimate website details
+- About me vertical center
 
 - Font sizes to rem
-- Google analytics
-- Experience tile design
 - Extract colors and sizes into variables (clean up code)
+
+- Experience tile design
 - Theme colors
 - iPad landscape responsiveness
-- Figure out to host on github from non-default directory

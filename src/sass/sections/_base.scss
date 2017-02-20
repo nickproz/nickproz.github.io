@@ -22,6 +22,7 @@ a, body {
     color: rgba(64,64,64,.9);
 }
 a {
+    text-decoration: none;
     @include transition(0.5s);
 }
 .container-inner {
