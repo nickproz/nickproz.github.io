@@ -29,7 +29,7 @@ a {
     width: 85%;
     margin: 0 auto;
     font-size: 0;
-    @include vertical-center-2();
+    @include vertical-center();
 }
 .fade-in-block {
     opacity: 0;
@@ -41,7 +41,7 @@ a {
     //display: flex;
     //justify-content: center;
     //align-items: center;
-    position: relative;
+    //position: relative;
 }
 
 // Tablet portrait styling (>480)
