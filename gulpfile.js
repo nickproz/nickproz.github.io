@@ -15,14 +15,14 @@ const gulpUtil = require('gulp-util');
 gulp.task('sass', function () {
     gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', gulpUtil.log))
-        .pipe(gulp.dest('dist/css/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 /**
  * Clean our javascript script file out of the dist directory.
  */
 gulp.task('clean-scripts', function () {
-    return gulp.src('dist/js/*.js', {read: false})
+    return gulp.src('dist/*.js', {read: false})
                .pipe(clean());
 });
 
@@ -34,7 +34,7 @@ gulp.task('js', ['clean-scripts'], function() {
   gulp.src('src/js/*.js')
     .pipe(concat('script.js'))
     // .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
-    .pipe(gulp.dest('dist/js/'));
+    .pipe(gulp.dest('dist/'));
 });
 
 /**
@@ -46,7 +46,7 @@ gulp.task('serve', function () {
             livereload: true,
 			fallback: 'index.html',
 			host: "0.0.0.0",
-            port: 3000,
+            port: 3000
         }));
 });
 
