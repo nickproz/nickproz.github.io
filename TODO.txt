@@ -1,5 +1,3 @@
-- About me vertical center
-
 - Font sizes to rem
 - Extract colors and sizes into variables (clean up code)
 
