@@ -78,12 +78,6 @@ example (usage): @include vertical-center();
 |               Theme Mixins              |
 -------------------------------------------
 */
-.blue-white-theme a:hover {
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #47a3da; }
-
 .blue-white-theme .home .home-background-image {
   background-color: #47a3da; }
 
@@ -98,6 +92,12 @@ example (usage): @include vertical-center();
   .blue-white-theme .navigation .nav-link {
     color: #47a3da; }
 
+.blue-white-theme .contact .contact-icon-container a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #47a3da; }
+
 .blue-white-theme .contact .contact-icon {
   color: #47a3da; }
 
@@ -110,12 +110,6 @@ example (usage): @include vertical-center();
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
-
-.blue-black-theme a:hover {
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #0cf; }
 
 .blue-black-theme .home .home-background-image {
   background-color: #0cf; }
@@ -131,6 +125,12 @@ example (usage): @include vertical-center();
   .blue-black-theme .navigation .nav-link {
     color: white; }
 
+.blue-black-theme .contact .contact-icon-container a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0cf; }
+
 .blue-black-theme .contact .contact-icon {
   color: #0cf; }
 
@@ -143,12 +143,6 @@ example (usage): @include vertical-center();
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
-
-.red-white-theme a:hover {
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #e55; }
 
 .red-white-theme .home .home-background-image {
   background-color: #e55; }
@@ -164,6 +158,12 @@ example (usage): @include vertical-center();
   .red-white-theme .navigation .nav-link {
     color: #e55; }
 
+.red-white-theme .contact .contact-icon-container a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #e55; }
+
 .red-white-theme .contact .contact-icon {
   color: #e55; }
 
@@ -176,12 +176,6 @@ example (usage): @include vertical-center();
       -webkit-transition: all 0.75s;
       transition: all 0.75s;
       color: #195a80; }
-
-.red-black-theme a:hover {
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #e55; }
 
 .red-black-theme .home .home-background-image {
   background-color: #e55; }
@@ -196,6 +190,12 @@ example (usage): @include vertical-center();
     background-color: #4d4d4d; }
   .red-black-theme .navigation .nav-link {
     color: white; }
+
+.red-black-theme .contact .contact-icon-container a:hover {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #e55; }
 
 .red-black-theme .contact .contact-icon {
   color: #e55; }
@@ -232,6 +232,7 @@ a, body {
   color: rgba(64, 64, 64, 0.9); }
 
 a {
+  text-decoration: none;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
