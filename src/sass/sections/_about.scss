@@ -9,18 +9,18 @@
 
     // Styles
     height: 100%;
-    display: flex;
 
     .about-me-image {
         margin: 0 auto;
-        @include vertical-center();
+        //@include vertical-center();
 
         // Important needed to override semantic styling
         width: 200px !important;
     }
     .about-me-description {
-        @include vertical-center();
+        //@include vertical-center();
         font-size: $size-font--description;
+        margin-top: 40px;
     }
 
     // Tablet portrait styling (>480)
@@ -39,6 +39,19 @@
         .about-me-image {
             // Important needed to override semantic styling
             width: 300px !important;
+        }
+        .about-me-description {
+            margin-left: 30px;
+            margin-top: 0;
+        }
+        .about-me-column {
+            display: inline-block;
+            width: 50%;
+        }
+        // Hacky fix for semantics grid columns not vertically centering correctly on iOS
+        .container-inner {
+            display: flex;
+            align-items: center;
         }
     }
 }
