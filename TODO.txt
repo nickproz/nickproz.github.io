@@ -7,6 +7,7 @@ Bugs:
 - 1 pixel above nav bar
 - Flicker on sides of experience tiles on hover
 - Page load background blue color flashes
+- Paragraphs don't wrap and we are forced to manually break the line
 
 Eventually:
 - Vertically center experience tile modal images
