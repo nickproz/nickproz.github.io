@@ -8,6 +8,7 @@ Bugs:
 - Flicker on sides of experience tiles on hover
 - Page load background blue color flashes
 - Paragraphs don't wrap and we are forced to manually break the line
+- Race condition when loading a page that has a hash to a new section (hash resets to home but doesn't scroll to section)
 
 Eventually:
 - Vertically center experience tile modal images
