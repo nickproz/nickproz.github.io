@@ -30,7 +30,7 @@
                 display: none;
             }
             .experience-image {
-                transform: scale(1.075);
+                transform: scale(1.06);
                 -webkit-filter: brightness(65%);
             }
         }
@@ -56,18 +56,22 @@
         }
         &.illinois {
             background-image: url('../data/images/tiles/illinois.JPG');
+            background-position: top center;
         }
         &.illini-media {
             background-image: url('../data/images/tiles/illini-media.jpg');
+            background-position: top center;
         }
         &.housing {
             background-image: url('../data/images/tiles/housing.jpg');
         }
         &.ultimate {
             background-image: url('../data/images/tiles/ultimate.jpg');
+            background-position: bottom center;
         }
         &.ultimate-website {
             background-image: url('../data/images/tiles/ultimate-website.jpg');
+            background-position: bottom center;
         }
     }
     .experience-text {
@@ -117,7 +121,7 @@
             width: 25%;
         }
         .experience-image-container {
-            height: 200px;
+            height: 215px;
         }
         .experience-text-overlay {
             font-size: 1rem;

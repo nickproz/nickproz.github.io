@@ -1,12 +1,21 @@
+Top Priority:
 - Font sizes to rem
 - Extract colors and sizes into variables (clean up code)
+- Experience tiles clickable indicator (company name banner with > arrow?)
 
-- Experience tiles to use semantic grid columns maybe?
+Bugs:
 - 1 pixel above nav bar
 - Flicker on sides of experience tiles on hover
 - Page load background blue color flashes
 
+Eventually:
+- Vertically center experience tile modal images
 - Experience tile design
 - Theme colors
 - iPad landscape responsiveness
 - Everything to flex
+
+To Consider:
+- Add headings for each section?
+- Experience tiles to use semantic grid columns maybe?
+- Picture and about description on top of one another at all viewports?

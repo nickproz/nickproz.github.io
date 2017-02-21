@@ -380,18 +380,18 @@ a {
   height: 100%; }
   .about .about-me-image {
     margin: 0 auto;
-    width: 200px !important; }
+    width: 250px !important; }
   .about .about-me-description {
     font-size: 14px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    line-height: 1.3; }
   @media only screen and (min-width: 480px) {
     .about .about-me-image {
-      width: 250px !important; }
-    .about .about-me-description {
-      font-size: 16px; } }
-  @media only screen and (min-width: 768px) {
-    .about .about-me-image {
       width: 300px !important; }
+    .about .about-me-description {
+      font-size: 16px;
+      line-height: 1.5; } }
+  @media only screen and (min-width: 768px) {
     .about .about-me-description {
       margin-left: 30px;
       margin-top: 0; }
@@ -401,6 +401,9 @@ a {
     .about .container-inner {
       display: flex;
       align-items: center; } }
+  @media only screen and (min-width: 1024px) {
+    .about .about-me-description {
+      line-height: 1.8; } }
 
 /*
 -------------------------------------------------
@@ -421,7 +424,7 @@ a {
       opacity: 1;
       display: none; }
     .experience .experience-tile:hover .experience-image {
-      transform: scale(1.075);
+      transform: scale(1.06);
       -webkit-filter: brightness(65%); }
   .experience .experience-image-container {
     box-shadow: 2px 2px 2px #888888;
@@ -441,15 +444,19 @@ a {
     .experience .experience-image.argonne {
       background-image: url("../data/images/tiles/argonne.jpg"); }
     .experience .experience-image.illinois {
-      background-image: url("../data/images/tiles/illinois.JPG"); }
+      background-image: url("../data/images/tiles/illinois.JPG");
+      background-position: top center; }
     .experience .experience-image.illini-media {
-      background-image: url("../data/images/tiles/illini-media.jpg"); }
+      background-image: url("../data/images/tiles/illini-media.jpg");
+      background-position: top center; }
     .experience .experience-image.housing {
       background-image: url("../data/images/tiles/housing.jpg"); }
     .experience .experience-image.ultimate {
-      background-image: url("../data/images/tiles/ultimate.jpg"); }
+      background-image: url("../data/images/tiles/ultimate.jpg");
+      background-position: bottom center; }
     .experience .experience-image.ultimate-website {
-      background-image: url("../data/images/tiles/ultimate-website.jpg"); }
+      background-image: url("../data/images/tiles/ultimate-website.jpg");
+      background-position: bottom center; }
   .experience .experience-text {
     font-size: 12px;
     margin: 0;
@@ -487,7 +494,7 @@ a {
     .experience .experience-tile {
       width: 25%; }
     .experience .experience-image-container {
-      height: 200px; }
+      height: 215px; }
     .experience .experience-text-overlay {
       font-size: 1rem; } }
 
