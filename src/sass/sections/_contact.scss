@@ -58,4 +58,18 @@
             font-size: 12px;
         }
     }
+
+    // Tablet landscape styling (>767)
+    @media #{($break-tablet-portrait)} {
+        .contact-image {
+            margin-bottom: 35px;
+        }
+    }
+
+    // Desktop styling (>1024)
+    @media #{($break-tablet-landscape)} {
+        .contact-image {
+            margin-bottom: 50px;
+        }
+    }
 }

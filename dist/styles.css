@@ -542,3 +542,9 @@ a {
       width: 150px; }
     .contact .contact-icon-container {
       font-size: 12px; } }
+  @media only screen and (min-width: 768px) {
+    .contact .contact-image {
+      margin-bottom: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    .contact .contact-image {
+      margin-bottom: 50px; } }

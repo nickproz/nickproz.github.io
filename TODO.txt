@@ -2,6 +2,7 @@ Top Priority:
 - Font sizes to rem
 - Extract colors and sizes into variables (clean up code)
 - Experience tiles clickable indicator (company name banner with > arrow?)
+- Remove jquery-ui if not needed
 
 Bugs:
 - 1 pixel above nav bar
@@ -21,3 +22,10 @@ To Consider:
 - Add headings for each section?
 - Experience tiles to use semantic grid columns maybe?
 - Picture and about description on top of one another at all viewports?
+
+Resume:
+- Make name blue?
+- Consider adding citation for supercomputing paper
+- Add some non-coding skills?
+- Combine Desk clerk bullet points into one if more space is needed
+- Combine Grader second and third bullet points into one if more space is needed
