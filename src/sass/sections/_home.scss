@@ -12,6 +12,7 @@
     // Styling
     height: 100%;
     overflow: hidden;
+    color: white;
 
     .home-background-image {
         height: 100%;
@@ -28,7 +29,6 @@
         right: 0;
     }
     .home-text {
-        color: white;
         font-size: $size-font--home-button;
         margin-bottom: 1rem;
     }
@@ -43,7 +43,9 @@
     .home-button-link {
         color: white;
         text-decoration: none;
-        @include vertical-center-2();
+    }
+    .home-button-text {
+        @include vertical-center();
     }
 
     // Tablet portrait styling (>480)
