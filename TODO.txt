@@ -22,6 +22,7 @@ To Consider:
 - Add headings for each section?
 - Experience tiles to use semantic grid columns maybe?
 - Picture and about description on top of one another at all viewports?
+- Getting rid of bower and just using npm?
 
 Resume:
 - Make name blue?
@@ -29,3 +30,14 @@ Resume:
 - Add some non-coding skills?
 - Combine Desk clerk bullet points into one if more space is needed
 - Combine Grader second and third bullet points into one if more space is needed
+
+Gulp Plugins:
+-autoprefixer - Adds browser specific prefixes to CSS rules so you don't have to (add it, get rid of standard mixins)
+-uncss - Removed unused CSS from project
+-csso - CSS minifactor tool (simplifies lines of CSS into one if they are from the same property family)
+-csslint - CSS lint tool (warnings and errors)
+-htmllint - HTML lint tool (warnings and errors)
+-babel - Transpile typescript/ES6 javascript
+-fixmyjs - JS lint tool (warnings and errors)
+-git/gh-pages - git tasks for within gulp, github pages deployment
+-pageres - Takes responsive screenshots of website for viewports

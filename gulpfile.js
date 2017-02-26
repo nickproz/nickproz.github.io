@@ -23,7 +23,7 @@ gulp.task('sass', function () {
  */
 gulp.task('clean-scripts', function () {
     return gulp.src('dist/*.js', {read: false})
-               .pipe(clean());
+        .pipe(clean());
 });
 
 /**
@@ -31,10 +31,10 @@ gulp.task('clean-scripts', function () {
  * uglify them, and then write them to dist.
  */
 gulp.task('js', ['clean-scripts'], function() {
-  gulp.src('src/js/*.js')
-    .pipe(concat('script.js'))
-    .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
-    .pipe(gulp.dest('dist/'));
+    gulp.src('src/js/*.js')
+        .pipe(concat('script.js'))
+        .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
+        .pipe(gulp.dest('dist/'));
 });
 
 /**
