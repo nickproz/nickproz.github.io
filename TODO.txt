@@ -41,3 +41,4 @@ Gulp Plugins:
 -fixmyjs - JS lint tool (warnings and errors)
 -git/gh-pages - git tasks for within gulp, github pages deployment
 -pageres - Takes responsive screenshots of website for viewports
+-shell - Run bash commands
