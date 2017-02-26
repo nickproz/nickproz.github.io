@@ -14,7 +14,13 @@ $tablet-portrait-lower-boundary: 480px;
 $tablet-landscape-lower-boundary: 768px;
 $desktop-lower-boundary: 1024px;
 $desktop-large-lower-boundary: 1280px;
-$desktop-large-upper-boundary: 1600px;
+
+// Alternative breakpoints
+// $mobile-lower-boundary: 300px;
+// $tablet-portrait-lower-boundary: 600px;
+// $tablet-landscape-lower-boundary: 900px;
+// $desktop-lower-boundary: 1200px;
+// $desktop-large-lower-boundary: 1800px;
 
 /*
 ---------------------------------------------------------
@@ -56,7 +62,4 @@ $desktop-large-upper-boundary: 1600px;
 }
 @mixin for-desktop-only {
   @media only screen and (min-width: $desktop-lower-boundary) and (max-width: #{$desktop-large-lower-boundary - 1}) { @content; }
-}
-@mixin for-desktop-large-only {
-  @media only screen and (min-width: $desktop-large-lower-boundary) and (max-width: #{$desktop-large-upper-boundary - 1}) { @content; }
 }
