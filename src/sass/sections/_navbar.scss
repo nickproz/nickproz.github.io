@@ -34,7 +34,7 @@
     }
 
     // Tablet portrait styling (>767)
-    @media #{($break-tablet-portrait)} {
+    @include for-tablet-landscape-up {
         .nav-link-container {
             flex-grow: 0;
         }

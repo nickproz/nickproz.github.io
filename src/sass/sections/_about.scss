@@ -25,7 +25,7 @@
     }
 
     // Tablet portrait styling (>480)
-    @media #{($break-mobile)} {
+    @include for-tablet-portrait-up {
         .about-me-image {
             // Important needed to override semantic styling
             width: 300px !important;
@@ -37,7 +37,7 @@
     }
 
     // Tablet landscape styling (>767)
-    @media #{($break-tablet-portrait)} {
+    @include for-tablet-landscape-up {
         .about-me-description {
             margin-left: 30px;
             margin-top: 0;
@@ -54,7 +54,7 @@
     }
 
     // Desktop styling (>1024)
-    @media #{($break-tablet-landscape)} {
+    @include for-desktop-up {
         .about-me-description {
             line-height: 1.8;
         }

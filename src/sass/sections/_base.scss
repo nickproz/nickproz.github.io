@@ -40,7 +40,7 @@ a {
 }
 
 // Tablet portrait styling (>480)
-@media #{($break-mobile)} {
+@include for-tablet-portrait-up {
     .container-inner {
         width: 75%;
     }

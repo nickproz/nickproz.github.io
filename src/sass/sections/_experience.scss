@@ -92,7 +92,7 @@
     }
 
     // Tablet portrait styling (>480)
-    @media #{($break-mobile)} {
+    @include for-tablet-portrait-up {
         .experience-image-container {
             height: 135px;
         }
@@ -103,7 +103,7 @@
     }
 
     // Tablet landscape styling (>767)
-    @media #{($break-tablet-portrait)} {
+    @include for-tablet-landscape-up {
         .experience-tile {
             width: 33%;
         }
@@ -116,7 +116,7 @@
     }
 
     // Desktop styling (>1024)
-    @media #{($break-tablet-landscape)} {
+    @include for-desktop-up {
         .experience-tile {
             width: 25%;
         }

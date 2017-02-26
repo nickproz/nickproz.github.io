@@ -49,14 +49,14 @@
     }
 
     // Tablet portrait styling (>480)
-    @media #{($break-mobile)} {
+    @include for-tablet-portrait-up {
         .home-background-image {
             background-attachment: fixed;
         }
     }
 
     // Tablet landscape styling (>767)
-    @media #{($break-tablet-portrait)} {
+    @include for-tablet-landscape-up {
         .home-text {
             font-size: 5rem;
             margin-bottom: 30px;
