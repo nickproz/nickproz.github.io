@@ -33,7 +33,7 @@ gulp.task('clean-scripts', function () {
 gulp.task('js', ['clean-scripts'], function() {
   gulp.src('src/js/*.js')
     .pipe(concat('script.js'))
-    // .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
+    .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
     .pipe(gulp.dest('dist/'));
 });
 
