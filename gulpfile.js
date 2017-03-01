@@ -8,7 +8,7 @@ const server = require('gulp-webserver');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const util = require('gulp-util');
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
 
 /**
  * Compile our styles sass file into css and write it to the dist directory.
