@@ -4,7 +4,6 @@
 - Font sizes to rem
 - Extract colors and sizes into variables (clean up code)
 - Experience tiles clickable indicator (company name banner with > arrow?)
-- Remove jquery-ui if not needed
 
 -----------------------------------
 |               Bugs              |
