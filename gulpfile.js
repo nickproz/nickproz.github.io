@@ -7,14 +7,15 @@ const uglify = require('gulp-uglify');
 const server = require('gulp-webserver');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
-const gulpUtil = require('gulp-util');
+const util = require('gulp-util');
+var exec = require('child_process').exec;
 
 /**
  * Compile our styles sass file into css and write it to the dist directory.
  */
 gulp.task('sass', function () {
     gulp.src('src/sass/*.scss')
-        .pipe(sass().on('error', gulpUtil.log))
+        .pipe(sass().on('error', util.log))
         .pipe(gulp.dest('dist/'));
 });
 
@@ -33,7 +34,7 @@ gulp.task('clean-scripts', function () {
 gulp.task('js', ['clean-scripts'], function() {
     gulp.src('src/js/*.js')
         .pipe(concat('script.js'))
-        .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
+        .pipe(uglify().on('error', util.log)) // Comment this line out for debugging
         .pipe(gulp.dest('dist/'));
 });
 
@@ -58,6 +59,17 @@ gulp.task('watch', function () {
     gulp.watch('./src/sass/sections/*.scss', ['sass']);
     gulp.watch('./src/sass/util/*.scss', ['sass']);
     gulp.watch('./src/js/*.js', ['js']);
+});
+
+/**
+ * Deploys our dist directory to our github pages branch (which is our live site).
+ */
+gulp.task('deploy', function (cb) {
+    exec('git push origin --delete gh-page; git subtree push --prefix dist origin gh-pages', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+    });
 });
 
 /**
