@@ -65,7 +65,7 @@ gulp.task('watch', function () {
  * Deploys our dist directory to our github pages branch (which is our live site).
  */
 gulp.task('deploy', function (cb) {
-    exec('git push origin --delete gh-page; git subtree push --prefix dist origin gh-pages', function (err, stdout, stderr) {
+    exec('git push origin --delete gh-pages; git subtree push --prefix dist origin gh-pages', function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
