@@ -3,6 +3,7 @@
  */
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const server = require('gulp-webserver');
 const clean = require('gulp-clean');
@@ -16,6 +17,7 @@ const exec = require('child_process').exec;
 gulp.task('sass', function () {
     gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', util.log))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/'));
 });
 

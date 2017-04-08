@@ -1,6 +1,4 @@
 .DS_Store
 .sass-cache/
+.idea/
 node_modules/
-#public/dependencies
-#public/js
-#public/css
