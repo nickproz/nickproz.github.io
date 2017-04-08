@@ -21,7 +21,7 @@ gulp
 **Do not edit `styles.css` and `script.js` in the `dist` folder.** All things there are auto-generated and any changes you make there will get overwritten by Gulp.
 
 # Deploy
-Use the following commands to deploy to github pages:
+Use the following commands to deploy to github pages (or run `gulp deploy`):
 ```bash
 git push origin --delete gh-pages
 git subtree push --prefix dist origin gh-pages
