@@ -7,7 +7,13 @@
   ],
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass && gulp js"
+    "build": "gulp sass && gulp js",
+    "git-add": "git add .",
+    "git-commit": "npm run git-add; git commit -m 'commit from gulp plugin'",
+    "git-push": "npm run git-commit; git push",
+    "git-deploy": "npm run git-push; git subtree push --prefix dist origin gh-pages",
+    "git-publish": "npm run build:prod; npm run git-deploy",
+    "git-delete-pages": "git push origin :gh-pages"
   },
   "dependencies": {
   },
