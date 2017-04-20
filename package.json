@@ -15,8 +15,7 @@
     "git-publish": "npm run build:prod; npm run git-deploy",
     "git-delete-pages": "git push origin :gh-pages"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
