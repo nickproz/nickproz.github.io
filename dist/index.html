@@ -35,9 +35,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="home">
             <div class="home-background-image"></div>
             <div class="home-content">
-                <p class="home-text fade-in-block" role="heading" aria-level="1">Hi, I'm Nick.</p>
+                <p data-rellax-percentage="0.5" data-rellax-speed="2" class="home-text fade-in-block rellax" role="heading" aria-level="1">Hi, I'm Nick.</p>
                 <a href="./assets/other/Nick-Prozorovsky-Résumé.pdf" class="home-button-link" target="_blank">
-                    <div class="home-button fade-in-block hvr-pulse">
+                    <div data-rellax-percentage="0.6" data-rellax-speed="0" class="home-button fade-in-block hvr-pulse rellax">
                         <div class="home-button-text">Résumé</div>
                     </div>
                 </a>
@@ -299,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="column"></div>
                         <div class="column">
                             <div class="contact-icon-container fade-in-block">
-                                <a href="./assets/other/Nick-Prozorovsky-Résumé.pdf" target="_blank">
+                                <a href="./assets/other/Nick-Prozorovsky-Résumé.pdf" class="contact-link" target="_blank">
                                     <i class="fa fa-male contact-icon" aria-hidden="true"></i>
                                     Nicholas Prozorovsky
                                 </a>
@@ -307,7 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="column">
                             <div class="contact-icon-container fade-in-block">
-                                <a href="tel:1-630-200-8105">
+                                <a href="tel:1-630-200-8105" class="contact-link">
                                     <i class="fa fa-mobile contact-icon" aria-hidden="true"></i>
                                     630-200-8105
                                 </a>
@@ -315,7 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="column">
                             <div class="contact-icon-container fade-in-block">
-                                <a href="mailto:nick.prozorovsky@gmail.com">
+                                <a href="mailto:nick.prozorovsky@gmail.com" class="contact-link">
                                     <i class="fa fa-envelope-o contact-icon" aria-hidden="true"></i>
                                     nick.prozorovsky @ gmail.com
                                 </a>
@@ -327,10 +327,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="footer">
                 <div class="footer-links">
-                    <a href="https://www.facebook.com/prozorovsky" target="_blank"><i class="fa fa-facebook-square footer-link"></i></a>
-                    <a href="https://twitter.com/nickproz" target="_blank"><i class="fa fa-twitter-square footer-link"></i></a>
-                    <a href="https://www.instagram.com/nickproz/" target="_blank"><i class="fa fa-instagram footer-link"></i></a>
-                    <a href="https://www.linkedin.com/in/nicholas-prozorovsky-367b4b90" target="_blank"><i class="fa fa-linkedin-square footer-link"></i></a>
+                    <a href="https://www.facebook.com/prozorovsky" class="social-media-link" target="_blank"><i class="fa fa-facebook-square footer-link"></i></a>
+                    <a href="https://twitter.com/nickproz" class="social-media-link" target="_blank"><i class="fa fa-twitter-square footer-link"></i></a>
+                    <a href="https://www.instagram.com/nickproz/" class="social-media-link" target="_blank"><i class="fa fa-instagram footer-link"></i></a>
+                    <a href="https://www.linkedin.com/in/nicholas-prozorovsky-367b4b90" class="social-media-link" target="_blank"><i class="fa fa-linkedin-square footer-link"></i></a>
                 </div>
             </div>
         </div>
@@ -354,6 +354,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="./dependencies/fullpage.js/dist/jquery.fullpage.min.js"></script>
 <script src="./dependencies/fullpage.js/dist/jquery.fullpage.extensions.min.js"></script>
 <script src="./dependencies/semantic/dist/semantic.min.js"></script>
+<script src="./dependencies/rellax/rellax.js"></script>
+<script>var rellax = new Rellax('.rellax');</script>
 <script src="./script.js"></script>
 
 <!-- Google Analytics -->
