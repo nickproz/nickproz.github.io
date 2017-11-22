@@ -15,7 +15,7 @@ $(document).ready(function() {
         // Modal initialization on the currently clicked modal
         $(target)
             // .modal('setting', 'transition', 'horizontal flip')
-            .modal({blurring: true})
+            // .modal({blurring: true})
             .modal('show');
     })
 });

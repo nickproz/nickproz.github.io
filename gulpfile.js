@@ -10,6 +10,7 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const util = require('gulp-util');
 const exec = require('child_process').exec;
+const autoprefixer = require('gulp-autoprefixer');
 
 /**
  * Compile our styles sass file into css and write it to the dist directory.
@@ -18,6 +19,10 @@ gulp.task('sass', function () {
     gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', util.log))
         .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('dist/'));
 });
 

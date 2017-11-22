@@ -17,6 +17,7 @@ $color-grayDark--navbar: 			#404040;
 $color-bluePale--navbar: 		    #47a3da;
 $color-blueElectric--navbar: 		#0cf;
 $color-redLight--navbar:            #e55;
+$color-black:                       rgba(0, 0, 0, 0.87);
 
 /*
 ------------------------------------
@@ -32,4 +33,6 @@ $size-height--navbar:               50px;
 */
 // $font-family--site:       'Rubik', sans-serif;
 //$font-family--site:       'Montserrat', sans-serif;
-$font-family--site: 'Lato', sans-serif;
+//$font-family--site: 'Lato', sans-serif;
+$font-family--site: 'Quattrocento', serif;
+$font-family--header: 'Lato', sans-serif;

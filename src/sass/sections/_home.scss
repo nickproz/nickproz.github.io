@@ -45,7 +45,7 @@
         text-decoration: none;
     }
     .home-button-text {
-        @include vertical-center();
+        line-height: $size-width--home-button;
     }
 
     // Tablet portrait styling (>480)
