@@ -23,25 +23,3 @@ example (usage): @include vertical-center();
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-// Transition
-@mixin transition($seconds) {
-    -moz-transition:    all $seconds;
-    -webkit-transition: all $seconds;
-    transition:         all $seconds;
-}
-
-// Transform
-@mixin transform($property) {
-    -moz-transform: $property;
-    -webkit-transform: $property;
-    transform: $property;
-}
-
-// Blur
-@mixin blur($pixels) {
-    -webkit-filter: blur($pixels);
-    -moz-filter: blur($pixels);
-    -ms-filter: blur($pixels);
-    filter: blur($pixels);
-}

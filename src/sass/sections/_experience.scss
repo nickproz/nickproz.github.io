@@ -3,7 +3,7 @@
 |               Experience Styling              |
 -------------------------------------------------
 */
-.experience {
+.tiles {
     // Local Variables
     $size-font--experience-text: 12px;
     $size-padding--experience-tile: 10px;
@@ -21,7 +21,8 @@
 
         &:hover {
             .experience-text {
-                text-shadow: 0 0 1px rgba(0,0,0,.35);
+                text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+                color: $color-black;
             }
             .experience-text-overlay {
                 opacity: 1;
@@ -30,7 +31,7 @@
                 display: none;
             }
             .experience-image {
-                transform: scale(1.06);
+                transform: scale(1.10);
                 -webkit-filter: brightness(65%);
             }
         }
@@ -42,12 +43,14 @@
         position: relative;
     }
     .experience-image {
-        @include transition(0.5s);
+        transition: 0.5s;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
+        transform: scale(1.03);
 
+        // Experience tiles
         &.vodori {
             background-image: url('../assets/images/experience/tiles/vodori.jpg');
         }
@@ -69,8 +72,18 @@
             background-image: url('../assets/images/experience/tiles/ultimate.jpg');
             background-position: bottom center;
         }
-        &.ultimate-website {
-            background-image: url('../assets/images/experience/tiles/ultimate-website.jpg');
+
+        // Project tiles
+        &.eric-photography {
+            background-image: url('../assets/images/projects/tiles/eric-photography-website.png');
+            background-position: bottom center;
+        }
+        &.illini-ultimate {
+            background-image: url('../assets/images/projects/tiles/illinois-ultimate-website.jpg');
+            background-position: bottom center;
+        }
+        &.lindsey-and-nate {
+            background-image: url('../assets/images/projects/tiles/lindsey-and-nate-website.png');
             background-position: bottom center;
         }
     }
@@ -78,12 +91,11 @@
         font-size: $size-font--experience-text;
         margin: 0;
         padding-top: 3px;
-        @include transition(0.5s);
+        transition: 0.5s;
         display: none;
     }
     .experience-text-overlay {
-        @include vertical-center-2();
-        @include transition(0.5s);
+        transition: 0.5s;
         font-size: $size-font--experience-text;
         color: white;
         opacity: 0;

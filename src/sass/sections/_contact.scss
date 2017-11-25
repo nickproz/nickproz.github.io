@@ -37,14 +37,15 @@
         bottom: 0;
         position: absolute;
         box-shadow: 0 -1px 2px 0 rgba(34,36,38,.15);
-        @include transition(0.5s);
+        transition: 0.5s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .footer-link {
             font-size: $size-font--icons;
             margin: 0 $size-margin--icons;
-        }
-        .footer-links {
-            @include vertical-center();
         }
     }
 

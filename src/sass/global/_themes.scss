@@ -39,8 +39,8 @@
         // Contact icons (i)
         .contact-icon-container {
             a:hover {
-                @include transition(0.5s);
-                color: $background-color-active;
+                transition: 0.5s;
+                color: $color-black;
             }
         }
         .contact-icon {
@@ -52,9 +52,10 @@
             // Footer icons (i)
             .footer-link {
                 color: $background-color-active;
+                transition: 0.5s;
 
                 &:hover {
-                    @include transition(0.75s);
+                    transition: 0.5s;
                     color: #195a80;
                 }
             }

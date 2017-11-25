@@ -27,7 +27,7 @@ a, body {
 }
 a {
     text-decoration: none;
-    @include transition(0.25s);
+    transition: 0.25s;
 }
 .container-inner {
     text-align: center;

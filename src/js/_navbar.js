@@ -22,7 +22,7 @@ $(document).ready(function() {
      */
     var activeNavLinkClass = 'nav-active';
     var fadeInBlockSelector = '.fade-in-block';
-    var navLinks = ['#home', '#about', '#experience', '#contact'];
+    var navLinks = ['#home', '#about', '#experience', '#projects', '#contact'];
 
     /*
      ----------------------------------------
@@ -115,7 +115,7 @@ $(document).ready(function() {
      * Full Page Plugin Settings.
      */
     $('#fullpage').fullpage({
-        anchors: ['home', 'about', 'experience', 'contact'],
+        anchors: ['home', 'about', 'experience', 'projects', 'contact'],
         menu: '#menu',
         fixedElements: '',
         verticalCentered: false
