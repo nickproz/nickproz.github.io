@@ -9,7 +9,6 @@ const server = require('gulp-webserver');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const util = require('gulp-util');
-const exec = require('child_process').exec;
 const autoprefixer = require('gulp-autoprefixer');
 
 /**
@@ -66,17 +65,6 @@ gulp.task('watch', function () {
     gulp.watch('./src/sass/sections/*.scss', ['sass']);
     gulp.watch('./src/sass/util/*.scss', ['sass']);
     gulp.watch('./src/js/*.js', ['js']);
-});
-
-/**
- * Deploys our dist directory to our github pages branch (which is our live site).
- */
-gulp.task('deploy', function (cb) {
-    exec('git push origin --delete gh-pages; git subtree push --prefix dist origin gh-pages', function (err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
 });
 
 /**
