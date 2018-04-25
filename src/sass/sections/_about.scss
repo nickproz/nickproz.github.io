@@ -18,9 +18,12 @@
     }
     .about-me-description {
         font-size: $size-font--description;
-        margin-top: 40px;
+        //margin-top: 40px;
         line-height: 24px;
         text-align: justify;
+    }
+    .about-me-header {
+        margin-top: 14px;
     }
 
     // Tablet portrait styling (>480)
@@ -60,6 +63,9 @@
     @include for-desktop-up {
         .about-me-description {
             line-height: 1.8;
+        }
+        .about-me-header {
+            margin-top: 0;
         }
     }
 }
