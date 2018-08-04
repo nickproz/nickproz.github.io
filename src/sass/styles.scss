@@ -9,20 +9,20 @@ example (usage): z-index: $zIndex-10--navigationMenu;
 |               All Sections              |
 -------------------------------------------
 */
-@import "util/breakpoints";
-@import "util/z-index";
-@import "global/variables";
-@import "global/mixins";
-@import "global/themes";
+@import 'util/breakpoints';
+@import 'util/z-index';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/themes';
 
 /*
 -------------------------------------------------
 |               Individual Sections             |
 -------------------------------------------------
 */
-@import "sections/base";
-@import "sections/navbar";
-@import "sections/home";
-@import "sections/about";
-@import "sections/experience";
-@import "sections/contact";
+@import 'sections/base';
+@import 'sections/navbar';
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/experience';
+@import 'sections/contact';
