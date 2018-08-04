@@ -5,9 +5,9 @@
 */
 .home {
     // Local Variables
-    $size-height--home-button:  100px;
-    $size-width--home-button:   35px;
-    $size-font--home-button:    4rem;
+    $size-height--home-button: 100px;
+    $size-width--home-button: 35px;
+    $size-font--home-button: 4rem;
 
     // Styling
     height: 100%;
@@ -16,7 +16,7 @@
 
     .home-background-image {
         height: 100%;
-        background-image: url("../assets/images/home/home.jpg");
+        background-image: url('../assets/images/home/home.jpg');
         background-size: cover;
         background-position: 30%;
         //background-position: center;

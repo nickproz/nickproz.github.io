@@ -5,8 +5,8 @@
 */
 .contact {
     // Local Variables
-    $size-font--icons:          40px;
-    $size-margin--icons:        10px;
+    $size-font--icons: 40px;
+    $size-margin--icons: 10px;
 
     // Styling
     height: 100%;
@@ -36,7 +36,7 @@
         text-align: center;
         bottom: 0;
         position: absolute;
-        box-shadow: 0 -1px 2px 0 rgba(34,36,38,.15);
+        box-shadow: 0 -1px 2px 0 rgba(34, 36, 38, 0.15);
         transition: 0.5s;
 
         display: flex;

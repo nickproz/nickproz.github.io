@@ -10,21 +10,21 @@ example (usage): background-color: $color-background--navbar;
 |               Colors              |
 -------------------------------------
 */
-$color-grayLight--navbar: 			white;
+$color-grayLight--navbar: white;
 // $color-grayLight--navbar: 			#efefef;
-$color-grayLight--body:             #f0f0f0;
-$color-grayDark--navbar: 			#404040;
-$color-bluePale--navbar: 		    #47a3da;
-$color-blueElectric--navbar: 		#0cf;
-$color-redLight--navbar:            #e55;
-$color-black:                       rgba(0, 0, 0, 0.87);
+$color-grayLight--body: #f0f0f0;
+$color-grayDark--navbar: #404040;
+$color-bluePale--navbar: #47a3da;
+$color-blueElectric--navbar: #0cf;
+$color-redLight--navbar: #e55;
+$color-black: rgba(0, 0, 0, 0.87);
 
 /*
 ------------------------------------
 |               Sizes              |
 ------------------------------------
 */
-$size-height--navbar:               50px;
+$size-height--navbar: 50px;
 
 /*
 ------------------------------------

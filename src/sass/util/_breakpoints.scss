@@ -28,22 +28,34 @@ $desktop-large-lower-boundary: 1280px;
 ---------------------------------------------------------
 */
 @mixin for-mobile-small-only {
-  @media only screen and (max-width: #{$mobile-lower-boundary - 1}) { @content; }
+    @media only screen and (max-width: #{$mobile-lower-boundary - 1}) {
+        @content;
+    }
 }
 @mixin for-mobile-up {
-  @media only screen and (min-width: $mobile-lower-boundary) { @content; }
+    @media only screen and (min-width: $mobile-lower-boundary) {
+        @content;
+    }
 }
 @mixin for-tablet-portrait-up {
-  @media only screen and (min-width: $tablet-portrait-lower-boundary) { @content; }
+    @media only screen and (min-width: $tablet-portrait-lower-boundary) {
+        @content;
+    }
 }
 @mixin for-tablet-landscape-up {
-  @media only screen and (min-width: $tablet-landscape-lower-boundary) { @content; }
+    @media only screen and (min-width: $tablet-landscape-lower-boundary) {
+        @content;
+    }
 }
 @mixin for-desktop-up {
-  @media only screen and (min-width: $desktop-lower-boundary) { @content; }
+    @media only screen and (min-width: $desktop-lower-boundary) {
+        @content;
+    }
 }
 @mixin for-desktop-large-up {
-  @media only screen and (min-width: $desktop-large-lower-boundary) { @content; }
+    @media only screen and (min-width: $desktop-large-lower-boundary) {
+        @content;
+    }
 }
 
 /*
@@ -52,14 +64,22 @@ $desktop-large-lower-boundary: 1280px;
 -------------------------------------------------------------------------
 */
 @mixin for-mobile-only {
-  @media only screen and (min-width: $mobile-lower-boundary) and (max-width: #{$tablet-portrait-lower-boundary - 1}) { @content; }
+    @media only screen and (min-width: $mobile-lower-boundary) and (max-width: #{$tablet-portrait-lower-boundary - 1}) {
+        @content;
+    }
 }
 @mixin for-tablet-portrait-only {
-  @media only screen and (min-width: $tablet-portrait-lower-boundary) and (max-width: #{$tablet-landscape-lower-boundary - 1}) { @content; }
+    @media only screen and (min-width: $tablet-portrait-lower-boundary) and (max-width: #{$tablet-landscape-lower-boundary - 1}) {
+        @content;
+    }
 }
 @mixin for-tablet-landscape-only {
-  @media only screen and (min-width: $tablet-landscape-lower-boundary) and (max-width: #{$desktop-lower-boundary - 1}) { @content; }
+    @media only screen and (min-width: $tablet-landscape-lower-boundary) and (max-width: #{$desktop-lower-boundary - 1}) {
+        @content;
+    }
 }
 @mixin for-desktop-only {
-  @media only screen and (min-width: $desktop-lower-boundary) and (max-width: #{$desktop-large-lower-boundary - 1}) { @content; }
+    @media only screen and (min-width: $desktop-lower-boundary) and (max-width: #{$desktop-large-lower-boundary - 1}) {
+        @content;
+    }
 }
