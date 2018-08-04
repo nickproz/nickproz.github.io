@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: 0 */
 /*
 -------------------------------------------
 |               Navbar Logic              |
@@ -36,7 +37,7 @@ $(document).ready(function() {
      */
     var resetHash = function() {
         var hash = window.location.hash;
-        if(hash === '' || navLinks.indexOf(hash) === -1) {
+        if (hash === '' || navLinks.indexOf(hash) === -1) {
             window.location.hash = 'home';
         }
     };
@@ -50,8 +51,8 @@ $(document).ready(function() {
     var updateMenu = function(nextIndex) {
         var hash;
         // If a slide next index is provided, use that, otherwise, grab the hash
-        if(nextIndex) {
-            hash = navLinks[nextIndex-1];
+        if (nextIndex) {
+            hash = navLinks[nextIndex - 1];
         } else {
             hash = window.location.hash;
         }
@@ -66,10 +67,12 @@ $(document).ready(function() {
      * @param hash - The hash of the menu section we are navigating to.
      */
     var updateNavActiveItem = function(hash) {
-        if(navLinks.indexOf(hash) >= 0) {
+        if (navLinks.indexOf(hash) >= 0) {
             $navLink.removeClass(activeNavLinkClass);
             var linkQuery = "a[href='" + hash + "']";
-            $(linkQuery).parent().addClass(activeNavLinkClass);
+            $(linkQuery)
+                .parent()
+                .addClass(activeNavLinkClass);
         }
     };
 
@@ -80,13 +83,15 @@ $(document).ready(function() {
      */
     var fadeInBlocks = function(hash) {
         // Change our hash into a corresponding class and query for all blocks within the hash section
-        var $domNode = $(hash.replace("#", "."));
+        var $domNode = $(hash.replace('#', '.'));
         var $blocks = $domNode.find(fadeInBlockSelector);
 
         // Only attempt to animate the blocks if they have an opacity of 0 (coming into view for the first time)
-        if($blocks.length > 0 && $($blocks[0]).css("opacity") === "0") {
-            $blocks.each(function(i){
-                $(this).delay(300*i).animate({'opacity':'1'},1000);
+        if ($blocks.length > 0 && $($blocks[0]).css('opacity') === '0') {
+            $blocks.each(function(i) {
+                $(this)
+                    .delay(300 * i)
+                    .animate({ opacity: '1' }, 1000);
             });
         }
     };
@@ -118,10 +123,10 @@ $(document).ready(function() {
         anchors: ['home', 'about', 'experience', 'projects', 'contact'],
         menu: '#menu',
         fixedElements: '',
-        verticalCentered: false
+        verticalCentered: false,
         // Comment the following two lines out for auto scroll to be disabled
-        ,autoScrolling: false,
-        onLeave: function(index, nextIndex){
+        autoScrolling: false,
+        onLeave: function(index, nextIndex) {
             updateMenu(nextIndex);
         }
     });
