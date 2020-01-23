@@ -11,13 +11,6 @@
         "git-publish": "npm run build; gh-pages -d dist",
         "lint": "eslint src",
         "pretty": "prettier --print-width 150 --tab-width 4 --arrow-parens always --single-quote --write \"src/**\"",
-        "precommit": "lint-staged"
-    },
-    "lint-staged": {
-        "*": [
-            "npm run pretty",
-            "git add"
-        ]
     },
     "dependencies": {},
     "devDependencies": {
@@ -34,7 +27,6 @@
         "gulp-uglify": "^1.5.4",
         "gulp-util": "~3.0.8",
         "gulp-webserver": "^0.9.1",
-        "husky": "^0.14.3",
         "lint-staged": "^7.2.0",
         "prettier": "^1.14.0"
     }
