@@ -10,7 +10,7 @@
         "build": "gulp sass && gulp js",
         "git-publish": "npm run build; gh-pages -d dist",
         "lint": "eslint src",
-        "pretty": "prettier --print-width 150 --tab-width 4 --arrow-parens always --single-quote --write \"src/**\"",
+        "pretty": "prettier --print-width 150 --tab-width 4 --arrow-parens always --single-quote --write \"src/**\""
     },
     "dependencies": {},
     "devDependencies": {
